@@ -53,8 +53,7 @@ body {
 }
 .aboutme_2-1 { background-color: navy; }
 .aboutme_2-2 { background-color: lime; }
-.aboutme_2-3 { background-color: orange; }
-.aboutme_2-4 { background-color: red; }
+.aboutme_2-3 { background-color: #FA8072; }
 
 
 p.aboutme_txtl {
@@ -85,7 +84,7 @@ p a {
 
 /* Footer */
 .footer{
-  position: absolute;
+  align-self: center;
   padding-top: 25px;
   background-color: white;
 }
