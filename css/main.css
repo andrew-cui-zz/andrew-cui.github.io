@@ -125,6 +125,7 @@
   border-color: black;
   opacity: 0.776;
   margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
   padding-bottom: 0.75%;
   max-width: 100vw;
@@ -140,7 +141,7 @@
   display: inline-flex;
   position: relative;
   width: 40vw;
-  left: 35vw;
+  left: 34vw;
 }
 
  /* Education */
