@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+}
+
+/**
+ * Navigation bar
+ */
+.nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+	overflow: hidden;
+	background-color: #0617AC;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	clear: both;
+}
+
+.nav li {
+	float: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 14px;
+}
+
+.nav li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+	background-color: #8ADAD8;
+}
+
+.active {
+	background-color: skyblue;
+}
+
+.nav:before,
+.nav:after {
+	content: gen;
+}
+
+
+/**
+ * General
+ */ 
+gen {
+	margin-top: 24px;
+}
+
+
+/**
+ * Education
+ */ 
+lefted {
+	float: left;
+	width: 26%;
+}
+righted { 
+	float: right;
+	width: 74%;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+
+/**
+ * The following are the styles for the various text types
+ */
+h1 {
+    color: navy;
+	font-family: "Helvetica Neue", "sans-serif";
+	font-size: 16;
+    margin-left: 15px;
+	line-height: 100%;
+}
+h2 {
+    color: black;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 13;
+    margin-left: 20px;
+	line-height: 100%;
+}
+h3 {
+    color: navy;
+	font-size: 10;
+    margin-left: 30px;
+	line-height: 100%;
+}
+h4 {
+    color: mediumpurple;
+	font-size: 7;
+    margin-left: 30px;
+	line-height: 100%;
+}
+p {
+	color: black;
+	font-size: 5;
+    margin-left: 5px;
+	line-height: 100%;
+}
