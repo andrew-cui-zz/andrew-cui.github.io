@@ -1,3 +1,6 @@
+head {
+  background-color: white;
+}
 body {
   background-color: white;
 }
@@ -5,6 +8,7 @@ body {
 
 /* General container */
 .container-fluid {
+  background-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -12,7 +16,7 @@ body {
 
 /* Navigation bar */
 .navbar-nav {
-  background-color: black;
+  background-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
   border: 0;
@@ -20,7 +24,7 @@ body {
   margin-bottom: 0;
   font-family: "Helvetica Neue";
   font-size: 14px;
-  color: white;
+  color: black;
 }
 
 .navbar-nav li>a {
@@ -28,44 +32,21 @@ body {
 }
 
 
- /* About me */
-.aboutme {
-  background-color: black;
-  padding-bottom: 25px;
-}
-
-.aboutme_1 {
-  padding-top: 50px;
-  background-color: black;
-  color: white;
-  padding-bottom: 20px;
-}
-
-.aboutme_2 {
+ /* Intro */
+.intro {
+  padding-top: 7%;
   background-color: white;
+  color: rgb(90, 90, 90);
+  padding-bottom: 3%;
+}
+
+.intro h1 {
   color: black;
-  padding-top: 40px;
 }
-
-.aboutme_col {
-  padding: 6px 20px 14px;
-  color: white;
+.intro h4 {
+  color: black;
+  text-align: left;
 }
-.aboutme_2-1 { background-color: navy; }
-.aboutme_2-2 { background-color: lime; }
-.aboutme_2-3 { background-color: #FA8072; }
-
-
-p.aboutme_txtl {
-  text-align: justify;
-  margin-left: 20px;
-}
-
-p.aboutme_txtr {
-  text-align: justify;
-  margin-right: 20px;
-}
-
 
 /* Paragraph styling */
 p {
@@ -73,7 +54,7 @@ p {
 }
 
 p a {
-  color: blue;
+  color: rgb(0, 180, 180);
 }
 
 .img-responsive {
@@ -89,8 +70,12 @@ p a {
   background-color: white;
 }
 
+.footer h5 {
+  text-align: center;
+  padding: 0px;
+}
 .footer a {
-  padding: 5px;
+  padding: 3px;
   background-color: white;
   color: navy;
 }
