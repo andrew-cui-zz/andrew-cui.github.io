@@ -1,0 +1,97 @@
+body {
+  background-color: white;
+}
+
+
+/* General container */
+.container-fluid {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+/* Navigation bar */
+.navbar-nav {
+  background-color: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  color: white;
+}
+
+.navbar-nav li>a {
+  color: white;
+}
+
+
+ /* About me */
+.aboutme {
+  background-color: black;
+  padding-bottom: 25px;
+}
+
+.aboutme_1 {
+  padding-top: 50px;
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.aboutme_2 {
+  background-color: white;
+  color: black;
+  padding-top: 40px;
+}
+
+.aboutme_col {
+  padding: 6px 20px 14px;
+  color: white;
+}
+.aboutme_2-1 { background-color: navy; }
+.aboutme_2-2 { background-color: lime; }
+.aboutme_2-3 { background-color: orange; }
+.aboutme_2-4 { background-color: red; }
+
+
+p.aboutme_txtl {
+  text-align: justify;
+  margin-left: 20px;
+}
+
+p.aboutme_txtr {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+
+/* Paragraph styling */
+p {
+  line-height: 150%;
+}
+
+p a {
+  color: blue;
+}
+
+.img-responsive {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* Footer */
+.footer{
+  position: absolute;
+  padding-top: 25px;
+  background-color: white;
+}
+
+.footer a {
+  padding: 5px;
+  background-color: white;
+  color: navy;
+}
