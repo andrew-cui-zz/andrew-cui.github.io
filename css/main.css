@@ -201,6 +201,10 @@
 .exp h2 {
   padding-bottom: 0.25%;
 }
+.exp-side p {
+  font-family: "Heebo";
+  font-size: 11pt;
+}
 .c1 h2, .c1 a { color: rgb(0, 73, 119); }
 .muse h2, .muse a { color: rgb(247, 125, 86); }
 .sfcu h2, .sfcu a, .sfcu a:hover { color: rgb(164, 0, 32);}

@@ -2,10 +2,12 @@
  * General setup for webpages
  */
 
-@import "https://fonts.googleapis.com/css?family=Lato:900,700,400|Khula:400|Julius Sans One:600,400";
+@import "https://fonts.googleapis.com/css?family=Lato:900,700,400|Khula:400|Julius Sans One:600,400|Heebo:600,400";
 
 html {
   -webkit-font-smoothing: antialiased;
+  max-width: 100vw;
+
 }
 head {
   background-color: white;
@@ -24,14 +26,14 @@ body {
 /* Navigation bar */
 .nav {
   transition-duration: 1s;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 7vh !important;
 }
 .navbar-fixed-top {
   position: fixed;
   top: 0;
   background-image: none;
-  width: 100vw;
+  width: 100vw !important;
   height: 7vh;
 }
 .navbar-nav {
@@ -72,6 +74,10 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 /* Span line */
 .line {
   display: inline-flex;
@@ -106,6 +112,7 @@ a:hover {
   background-color: rgb(240, 244, 248) !important;
   border-radius: 1px;
   border-color: rgb(90, 90, 90);
+  margin-bottom: 0;
 }
 .footer h5 {
   text-align: center;
@@ -118,7 +125,7 @@ a:hover {
 
 /* Setting default font style */
 p, li, li>a, li>a:hover {
-  font-family: "Khula", sans-serif !important;
+  font-family: "Khula", sans-serif;
   font-size: 11pt;
   line-height: 150%;
 }
