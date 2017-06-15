@@ -1,7 +1,103 @@
+head {
+  background-color: white;
+}
 body {
   background-color: white;
 }
 
-.covers {
-  padding-top: 30px;
+/* General container */
+.container-fluid {
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Navigation bar */
+.navbar-nav {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  background-color: rgb(0, 180, 180);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 0;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  color: white;
+}
+.navbar-nav a  {
+  color: white !important;
+}
+.navbar-nav a:hover {
+  color: rgb(215, 215, 215);
+}
+
+ /* Intro */
+.intro {
+  padding-top: 7%;
+  background-color: white;
+  color: rgb(90, 90, 90);
+  padding-bottom: 3%;
+}
+.intro h1 {
+  font-size: 50px;
+  color: rgb(0, 180, 180);
+}
+.intro h4 {
+  color: black;
+  text-align: left;
+}
+.intro-foot h1, h2, h3 {
+  color: rgb(0, 180, 180);
+}
+.intro-foot p, a {
+  color: rgb(90, 90, 90);
+  padding-bottom: 0%;
+}
+
+/* Spacefiller */
+.spacefill {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+
+ /* Button */
+.btn a {
+  color: rgb(90, 90, 90);
+}
+
+/* General styling */
+p {
+  line-height: 150%;
+}
+p a {
+  color: rgb(0, 180, 180);
+}
+
+.img-responsive {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.img-circle {
+  color: white;
+  background-color: white;
+}
+
+/* Footer */
+.footer{
+  align-self: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgb(236, 239, 242);
+  border-radius: 1px;
+  border-color: rgb(90, 90, 90);
+}
+.footer h5 {
+  text-align: center;
+  padding: 0px;
+}
+.footer a {
+  padding: 3px;
+  color: navy;
 }

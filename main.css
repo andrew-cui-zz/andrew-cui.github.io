@@ -71,31 +71,64 @@ body {
 .education h2 {
   color: white;
 }
-.mt a {
+.education a {
   color: white;
 }
 .mt a:hover {
   color: rgb(140, 140, 140);
 }
-.wharton a {
-  color: white;
-}
 .wharton a:hover {
   color: navy;
-}
-.seas a {
-  color: white;
 }
 .seas a:hover {
   color: crimson;
 }
+.bhs a:hover {
+  color: navy;
+}
+.ecms a:hover {
+  color: rgb(255, 220, 50);
+}
+.ur a:hover {
+  color: rgb(255, 20, 50);
+}
 
 /* Experience */
 .experience {
- background-color: white;
- color: rgb(0, 180, 180);
- padding-bottom: 3%;
+  padding-top: 1%;
+  background-color: white;
+  color: rgb(0, 180, 180);
+  padding-bottom: 3%;
 }
+
+.experience h4 {
+  color: rgb(90, 90, 90)
+}
+.experience p {
+  color: rgb(90, 90, 90);
+}
+.experience li, li>a:hover {
+  color: rgb(90, 90, 90);
+}
+.experience h2 {
+  color: rgb(0, 180, 180);
+}
+.c1 h2, a {
+  color: rgb(0, 73, 119);
+}
+.muse h2, a {
+  color: rgb(247, 125, 86);
+}
+.sfcu h2, a {
+  color: rgb(164, 0, 32);
+}
+.icc h2, a {
+  color: rgb(85, 200, 219);
+}
+.rit h2 {
+  color: black;
+}
+
 
  /* Button */
 .btn a {
@@ -122,8 +155,11 @@ p a {
 /* Footer */
 .footer{
   align-self: center;
-  padding-top: 25px;
-  background-color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgb(236, 239, 242);
+  border-radius: 1px;
+  border-color: rgb(90, 90, 90);
 }
 .footer h5 {
   text-align: center;
@@ -131,6 +167,5 @@ p a {
 }
 .footer a {
   padding: 3px;
-  background-color: white;
   color: navy;
 }
