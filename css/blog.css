@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+head {
+  background-color: white;
+}
+body {
+  background-color: white;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+/* General container */
+.container-fluid {
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Navigation bar */
+.navbar-nav {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  background-color: rgb(0, 180, 180);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 0;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  color: white;
+}
+.navbar-nav a  {
+  color: white !important;
+}
+.navbar-nav a:hover {
+  background-color: white !important;
+  color: rgb(40, 40, 40) !important;
+}
+
+/* Blog */
+.sidebar {
+  overflow-y: hidden;
+  position: fixed;
+  width: 15%;
+  top: 15vh;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.blog {
+  overflow-y: scroll;
+  top: 15vh;
+  left: 240px;
+  width: 85vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+
+/* Spacefiller */
+.spacefill {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+ /* Button */
+.btn a {
+  color: rgb(90, 90, 90);
+}
+
+/* General styling */
+p {
+  line-height: 150%;
+}
+p a {
+  color: rgb(0, 180, 180);
+}
+
+.img-responsive {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.img-circle {
+  color: white;
+  background-color: white;
+}
+
+/* Footer */
+.footer{
+  align-self: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgb(240, 244, 248);
+  border-radius: 1px;
+  border-color: rgb(90, 90, 90);
+}
+.footer h5 {
+  text-align: center;
+  padding: 0px;
+}
+.footer a {
+  padding: 3px;
+  color: navy;
+}

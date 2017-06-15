@@ -29,12 +29,13 @@ body {
   color: white !important;
 }
 .navbar-nav a:hover {
-  color: rgb(215, 215, 215);
+  background-color: white !important;
+  color: rgb(40, 40, 40) !important;
 }
 
  /* Intro */
 .intro {
-  padding-top: 7%;
+  padding-top: 6%;
   background-color: white;
   color: rgb(90, 90, 90);
   padding-bottom: 3%;
@@ -71,6 +72,9 @@ body {
 .education h2 {
   color: white;
 }
+.education a:hover, li>a:hover {
+  font-weight: bold;
+}
 .education a {
   color: white;
 }
@@ -90,7 +94,7 @@ body {
   color: rgb(255, 220, 50);
 }
 .ur a:hover {
-  color: rgb(255, 20, 50);
+  color: rgb(255, 220, 50);
 }
 
 /* Experience */
@@ -109,6 +113,9 @@ body {
 }
 .experience li, li>a:hover {
   color: rgb(90, 90, 90);
+}
+.experience a:hover {
+  font-weight: bold;
 }
 .experience h2 {
   color: rgb(0, 180, 180);
@@ -157,7 +164,7 @@ p a {
   align-self: center;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: rgb(236, 239, 242);
+  background-color: rgb(240, 244, 248);
   border-radius: 1px;
   border-color: rgb(90, 90, 90);
 }
