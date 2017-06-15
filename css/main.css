@@ -40,87 +40,151 @@
   color: white;
   font-size: 60pt;
 }
-
-.icon-bar {
-  background-color: rgb(0, 180, 180);
-  color: rgb(0, 180, 180);
+.background {
+  padding-bottom: 1%;
+  position: relative;
 }
 
+/* Introduction Header */
+.preintro hr {
+  position: relative;
+  margin: 0;
+}
 
  /* Intro */
 .intro {
-  padding-top: 6%;
+  padding-top: 5%;
   background-color: white;
   color: rgb(90, 90, 90);
-  padding-bottom: 3%;
+  padding-bottom: 0%;
+  align-items: center;
+}
+.intro .line {
+  position: relative;
+  background-color: rgb(90, 90, 90);
+  left: 46vw;
+  width: 8vw;
+  margin-bottom: 5%;
 }
 .intro h1 {
   font-size: 44pt;
   color: rgb(0, 180, 180);
 }
-.intro h4 {
-  color: black;
-  text-align: left;
-}
-.intro-foot h1, h2, h3 {
-  color: rgb(0, 180, 180);
-}
-.intro-foot p, a {
+.intro h2, .intro h3 {
   color: rgb(90, 90, 90);
-  padding-bottom: 0%;
+}
+.intro h4 {
+  color: rgba(0, 180, 180, 0.8);
+  font-size: 13pt;
+  text-align: center;
+}
+.dropcap {
+  width: 35%;
+  font-size: 160%;
+  line-height: 160%;
+}
+.intro p {
+  font-size: 12pt;
+}
+.interests {
+  height: 5vw;
+  margin-bottom: 2%;
+  text-align: center;
+  position: relative;
+  align-items: center;
+}
+/*.interests p {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 140%;
+}
+.il {
+  color: white;
+  background-color: rgb(0, 180, 180);
+  height: 100%;
+  border-color: rgb(150, 150, 150);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  font-weight: 700;
+}
+.ir {
+  color: rgb(90, 90, 90);
+  background-color: white;
+  height: 100%;
+  border-color: rgb(150, 150, 150);
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+}*/
+.resume-buttons {
+  position: relative;
+  background-color: black;
+  border-style: solid;
+  border-width: 4px 0px 4px 0px;
+  border-color: black;
+  opacity: 0.776;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.75%;
+  max-width: 100vw;
+}
+.portfolio-img {
+  max-height: 40px;
+}
+.logo-space {
+  width: 10%;
+  background-color: transparent;
+}
+.resume-links {
+  display: inline-flex;
+  position: relative;
+  width: 40vw;
+  left: 35vw;
 }
 
  /* Education */
 .education {
+  padding-top: 5%;
   background-color: rgb(0, 180, 180);
   color: white;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   padding-left: 0px;
   padding-right: 0px;
+}
+.education .line {
+  background-color: white;
 }
 .education h2 {
   color: white;
 }
-.education a:hover, li>a:hover {
+.education a:hover, li a:hover {
   font-weight: bold;
 }
-.education a {
-  color: white;
-}
-.mt a:hover {
-  color: rgb(140, 140, 140);
-}
-.wharton a:hover {
-  color: navy;
-}
-.seas a:hover {
-  color: crimson;
-}
-.bhs a:hover {
-  color: navy;
-}
-.ecms a:hover {
-  color: rgb(255, 220, 50);
-}
-.ur a:hover {
+.education a { color: white; }
+.mt a:hover { color: inherit; }
+.wharton a:hover { color: navy; }
+.seas a:hover { color: crimson; }
+.bhs a:hover { color: navy; }
+.ur a:hover { color: black; }
+.ecms li > a:hover {
   color: rgb(255, 220, 50);
 }
 
 /* Experience */
 .experience {
+  padding-top: 5%;
   background-color: white;
   color: rgb(0, 180, 180);
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
-
-.exp {
-  padding-top: 0.5%;
-}
-.c1 {
-  padding-top: 2%;
+.experience .line {
+  background-color: rgb(0, 180, 180);
 }
 .experience h4 {
-  color: rgb(90, 90, 90)
+  color: rgb(90, 90, 90);
+  padding-bottom: 2%;
+  line-height: 160%;
 }
 .experience p {
   color: rgb(90, 90, 90);
@@ -134,21 +198,16 @@
 .experience h2 {
   color: rgb(0, 180, 180);
 }
-.c1 h2, .c1 a {
-  color: rgb(0, 73, 119);
+.exp h2 {
+  padding-bottom: 0.25%;
 }
-.muse h2, .muse a {
-  color: rgb(247, 125, 86);
-}
-.sfcu h2, .sfcu a {
-  color: rgb(164, 0, 32);
-}
-.icc h2, .icc a {
-  color: rgb(85, 200, 219);
-}
-.rit h2 {
-  color: black;
-}
+.c1 h2, .c1 a { color: rgb(0, 73, 119); }
+.muse h2, .muse a { color: rgb(247, 125, 86); }
+.sfcu h2, .sfcu a, .sfcu a:hover { color: rgb(164, 0, 32);}
+.icc h2, .icc a { color: rgb(85, 200, 219); }
+.rit h2 { color: black; }
+
+/* img-circle */
 .img-circle {
   padding: 2.5px;
 }

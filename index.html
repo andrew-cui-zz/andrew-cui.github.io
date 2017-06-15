@@ -7,17 +7,17 @@
 
   <!-- Google Analytics/Optimize-->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
 
-    ga('create', 'UA-86802917-1', 'auto');
-    ga('require', 'GTM-T2HV9W9');
-    ga('send', 'pageview');
+    ga("create", "UA-86802917-1", "auto");
+    ga("require", "GTM-T2HV9W9");
+    ga("send", "pageview");
   </script>
 
-  <!-- Bootstrap 3.7 -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,19 +25,28 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/general.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 
   <meta name="creator" content="Andrew Cui">
-  <link rel="shortcut icon" type="image/png" href="edits/icon.ai"/>
+  <link rel="shortcut icon" type="image/png" href="files/icon.png"/>
   <meta name="keywords" content="Andrew, Cui, Andrew Cui, Yiqun, Yiqun Cui, Andrew (Yiqun) Cui, Rochester, University of Pennsylvania, 2020, Jerome Fisher Program in Management and Technology, Wharton School, Penn Engineering, Brighton High School, 2016"/>
   <meta name="description" content="Dual-degree student at the University of Pennsylvania interested in the intersection of computer science, finance and data analytics."/>
 </head>
 
+<body class="custom-scroll" data-spy="scroll" data-target=".navbar" offset="10" data-offset="10">
 
-
-<!-- Navigation bar -->
-<nav class="navbar navbar-fixed-top">
+<!-- navbar -->
+<nav class="navbar navbar-fixed-top" id="site-nav">
   <div class="nav">
-    <div class="navbar-header">
+    <div class="navbar-header" style="display: inline">
+      <span class="navbar-brand"
+      style="font-family: 'Julius Sans One';
+            font-weight: 600;
+            font-size: 14pt;
+            color: rgba(0, 180, 180, 0.9);
+            margin-left: 5px;
+            margin-right: 15px;"
+      >andrew cui</span>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -46,37 +55,57 @@
     </div>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="nav navbar-nav">
-        <li><a href="#"><span class="glyphicon glyphicon-home" data-toggle="tooltip" data-placement="bottom" title="Home" style="margin-right: 0px; display: inline-block;"></span></a></li>
-        <li><a href="#education"><span class="glyphicon glyphicon-education" data-toggle="tooltip" data-placement="bottom" title="Education" style="margin-right: 8px; display: inline-block;"></span>Education</a></li>
-        <li><a href="#experience"><span class="glyphicon glyphicon-briefcase" data-toggle="tooltip" data-placement="bottom" title="Experience" style="margin-right: 8px; display: inline-block;"></span>Experience</a></li>
-        <li><a href="s-p.html"><span class="glyphicon glyphicon-folder-open" data-toggle="tooltip" data-placement="right" title="Portfolio/Skills" style="margin-right: 8px; display: inline-block;"></span>Skills</a></li>
-        <li><a href="https://medium.com/@andrewcui"><span><img src="files/logos/medium1.png" height="21px" style="margin-right: 3px"></img></span>Writing</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://www.calendly.com/andrewcui"><span class="glyphicon glyphicon-calendar" data-toggle="tooltip" data-placement="bottom" title="Let's meet"></span></a></li>
-        <li><a href="mailto:email@andrewcui.com"><span class="glyphicon glyphicon-send" data-toggle="tooltip" data-placement="bottom" title="Contact me"></span></a></li>
+        <li><a href="#home">
+          <span class="glyphicon glyphicon-home"style="margin-right: 0px; display: inline-block;"></span>
+        </a></li>
+        <li><a href="#intro">
+          <span class="glyphicon glyphicon-user" style="margin-right: 8px; display: inline-block;"></span>About
+        </a></li>
+        <li><a href="#education">
+          <span class="glyphicon glyphicon-education" style="margin-right: 8px; display: inline-block;"></span>Education
+        </a></li>
+        <li><a href="#experience">
+          <span class="glyphicon glyphicon-briefcase" style="margin-right: 8px; display: inline-block;"></span>Experience
+        </a></li>
+        <li><a href="#skills">
+          <span class="glyphicon glyphicon-wrench" style="margin-right: 8px; display: inline-block;"></span>Skills
+        </a></li>
+        <li><a href="#portfolio">
+          <span class="glyphicon glyphicon-folder-open" style="margin-right: 8px; display: inline-block;"></span>Portfolio
+        </a></li>
+        <!-- spacer -->
+        <li style="width: 75px"><p style="opacity: 0;">spacer</p></li>
+        <!-- <li><a href="https://medium.com/@andrewcui" target="_blank">
+          <span><img src="img/logos/medium1.png" height="21px" style="margin-right: 3px"></img></span>Writing
+        </a></li> -->
+        <li><a href="http://www.calendly.com/andrewcui" target="_blank">
+          <span class="glyphicon glyphicon-calendar"
+          data-toggle="tooltip" data-placement="bottom" title="Lets meet"></span>
+        </a></li>
+        <li><a href="mailto:email@andrewcui.com?&subject=[andrewcui.com]: ">
+          <span class="glyphicon glyphicon-send"
+          data-toggle="tooltip" data-placement="bottom" title="Contact me"></span>
+        </a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<body>
-
-<!-- Header -->
-<div class="background">
+<!-- header -->
+<div id="home" class="background">
   <div class="container-fluid background-image">
-    <img class="img-responsive" src="files/intro/jesus-kiteque.jpg"/>
+    <img class="img-responsive" src="img/intro/jesus-kiteque.jpg"/>
   </div>
-  <div class="container-fluid img-caption">
+  <!-- <div class="container-fluid img-caption">
     <p class="text-right img-caption">
-      <i><a href="https://unsplash.com/@jesuskiteque">Jesus Kiteque</a>, <a href="https://community.unsplash.com/help-section/can-i-use-unsplash-photo-for-personal-projects">Unsplash</a></i>
+      <i><a href="https://unsplash.com/@jesuskiteque" target="_blank">Jesus Kiteque</a>, <a href="https://community.unsplash.com/help-section/can-i-use-unsplash-photo-for-personal-projects" target="_blank">Unsplash</a></i>
     </p>
-  </div>
-  <hr />
+  </div> Currently taken out due to style issues - will add back -->
   <div class="contaner-fluid content-box">
+    <!-- TODO: Add photo and caption on top of the image in Adobe CC Photoshop -->
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
-      <img class="img-responsive img-circle center-block" style="display-inline" src="files/profile.jpg" width="60%" height="60%">
+      <img class="img-responsive img-circle center-block" style="display-inline" src="img/profile.jpg" width="60%" height="60%">
     </div>
     <div class="col-sm-6">
       <p style="opacity: 0;">spacer</p><p style="opacity: 0;">spacer</p>
@@ -89,102 +118,109 @@
   </div>
 </div>
 
-<!-- Introduction -->
+<!-- introduction -->
 <div id="intro" class="container-fluid intro">
+  <h2 class="text-center" style="padding-bottom: 1vh;">Hi, I'm Andrew.</h2>
+  <span class="line"></span>
+  <br />
   <div class="row">
+    <div class="col-sm-1"></div>
     <div class="col-sm-5">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-11">
-        <img class="img-responsive img-circle center-block" style="display-inline" src="files/profile.jpg" width="60%" height="60%">
-        <div class="row text-center">
-          <br />
-          <div class="col-sm-2"></div>
-          <div class="col-sm-2 center-block">
-            <a href="https://www.linkedin.com/in/yiquncui"><img class="img-responsive img-center center-block" src="files/logos/linkedin.png" width="32" height="32" data-toggle="tooltip" data-placement="left" title="LinkedIn"></a>
-          </div>
-          <div class="col-sm-2 center-block">
-            <a href="https://github.com/andrew-cui"><img class="img-responsive img-center center-block" src="files/logos/github.png" width="32" height="32" data-toggle="tooltip" data-placement="top" title="GitHub"></a>
-          </div>
-          <div class="col-sm-2 center-block">
-            <a href="https://www.instagram.com/cui._.sine/"><img class="img-responsive img-center center-block" src="files/logos/instagram.png" width="32" height="32" data-toggle="tooltip" data-placement="top" title="Photo blog"></a>
-          </div>
-          <div class="col-sm-2 center-block">
-            <a href="https://medium.com/@andrewcui"><img class="img-responsive img-center center-block" src="files/logos/medium2.png" width="32" height="32" data-toggle="tooltip" data-placement="right" title="Medium"></a>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-        <br />
-        <div class="row text-center resume">
-          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="click to view"><a href="files/resume.pdf" target="_blank">resume</a></button>
-        </div>
-      </div>
+      <p><span class="dropcap" style="float: left;">About me</span>I'm a rising sophomore at the University of Pennsylvania from upstate New York, studying in the Jerome Fisher Program in Management and Technology (M&T).</p>
     </div>
-    <div class="col-sm-6">
-      <div class="text-center">
-        <h1>
-          <b>Andrew Cui</b>
-        </h1> <br />
-        <h3 style="text-align: left; color: black">About Me</h3>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-9">
-            <p align="right">
-              Rising sophomore in the Management and Technology program at the University of Pennsylvania studying <a href="http://www.cis.upenn.edu/current-students/undergraduate/index.php">computer science</a>, <a href="https://fnce.wharton.upenn.edu/programs/undergraduate/">finance, </a><a href="https://statistics.wharton.upenn.edu/programs/undergraduate/statistics-concentration/">statistics,</a> and <a href="https://oid.wharton.upenn.edu/programs/undergraduate/">operations, information, and decisions</a>.
-            </p>
-          </div>
-        <br />
-        <h3 style="text-align: left; color: black">Interests</h3>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-9">
-            <p style="text-align: left;">
-              <ul style="text-align: left;">
-                <li>Data analytics, machine learning, statistics, psychology</li>
-                <li>Data science, product design, quantitative finance, research (especially in human behavior/preferences)</li>
-                <li>Running, photography, graphic design, web development</li>
-              </ul>
-            </p>
-          </div>
-        <br />
-        <h3 style="text-align: left; color: black">What I'm doing</h3>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-9">
-            <p style="text-align: left;">
-              <ul style="text-align: left;">
-                <li>Interning at <a href="https://www.capitalone.com/">Capital One</a> for analytics</li>
-                <li>Learning Python, HTML, CSS</li>
-                <li>Doing the Kaggle Titanic contest and creating this website</li>
-                <li>Taking Andrew Ng's <a href="https://www.coursera.org/learn/machine-learning">Coursera ML class</a> and a Wall Street Passport course focused on accounting and finance skills</li>
-              </ul>
-            </p>
-          </div>
-          <div class="col-sm-1"></div>
-      </div>
+    <div class="col-sm-5">
+      <p>I'm pursuing two degrees through M&T, studying <a href="http://www.cis.upenn.edu/current-students/undergraduate/index.php" target="_blank">Computer Science</a> in Engineering in addition to triple-concentrating in <a href="https://fnce.wharton.upenn.edu/programs/undergraduate/" target="_blank">Finance</a>, <a href="https://statistics.wharton.upenn.edu/programs/undergraduate/statistics-concentration/" target="_blank">Statistics</a>, and <a href="https://oid.wharton.upenn.edu/programs/undergraduate/" target="_blank">Operations, Information, and Decisions</a>, or OIDD, on the Wharton side.</p>
     </div>
+    <div class="col-sm-1"></div>
   </div>
-  <div class="intro-foot" align="center">
-    <hr />
-    <h2 text-color="rgb(0, 180, 180)">See more below</h2>
-    <br />
-    <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-        <a href="#education"><i class="glyphicon glyphicon-chevron-down" data-toggle="tooltip" data-placement="top" title="view education"></i></a>
+  <span class="line" style="position: relativeopacity: 0.7; height: 1px; width: 20vw; left: 40vw; margin-top: 2.5%; margin-bottom: 2.5%;"></span>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <p class="text-center"><span class="dropcap">Current plans</span></p>
+      <br />
+      <p>From June to August, I'll be working for Capital One as a Product Management and Analytics intern. To improve my data analytics skills, I"ll be learning Python (packages such as numpy and pandas) and SQL.</p>
+      <br />
+      <p>I"m going to work on this website, a project I started in December while teaching myself HTML/CSS, hoping to learn some basic jQuery/JavaScript to make the site more interactive. I'll also take some online courses in data science and <a href="https://www.coursera.org/learn/machine-learning" target="_blank">introductory ML</a>, hoping to do Kaggle's Titanic prediction project.</p>
+      <br />
+      <p>I'm excited to read books such as Adam Grant's <i>Originals</i> and Angela Duckworth's <i>Grit</i>, and I want to sharpen my photography skills during my months in the D.C. area. Finally, I'm taking a Wall Street Passport class to learn basics of finance, accounting, and investments, geared towards my business-oriented interests.</p>
+    </div>
+    <div class="col-sm-1" style="width: 3vw;"></div>
+    <div class="col-sm-4" style="width: 40vw;">
+      <p class="text-center"><span class="dropcap">My interests</span></p>
+      <!-- <br />
+      <div class="row interests">
+        <div class="col-sm-3 il"><p>Data science</p></div>
+        <div class="col-sm-3 ir"><p>Data analytics</p></div>
+        <div class="col-sm-3 ir"><p>Statistics and probability</p></div>
+        <div class="col-sm-3 ir"><p>Machine learning</p></div>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="row interests">
+        <div class="col-sm-3 il"><p>Business</p></div>
+        <div class="col-sm-3 ir"><p>Quantitative finance</p></div>
+        <div class="col-sm-3 ir"><p>Analytics consulting</p></div>
+        <div class="col-sm-3 ir"><p></p></div>
+      </div>
+      <div class="row interests">
+        <div class="col-sm-3 il"><p>Technology</p></div>
+        <div class="col-sm-3 ir"><p>Product design</p></div>
+        <div class="col-sm-3 ir"><p>Product management</p></div>
+        <div class="col-sm-3 ir"><p></p></div>
+      </div>
+      <div class="row interests">
+        <div class="col-sm-3 il"><p>Art</p></div>
+        <div class="col-sm-3 ir"><p>Photography</p></div>
+        <div class="col-sm-3 ir"><p>Graphic design</p></div>
+        <div class="col-sm-3 ir"><p> </p></div>
+      </div> -->
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <br /><br />
+  <!-- social media links -->
+  <div class="row resume-buttons">
+    <div class="row resume-links">
+      <a href="https://www.linkedin.com/in/yiquncui" target="_blank">
+        <img class="portfolio-img img-responsive img-center center-block"
+        src="img/logos/linkedin2.png"
+        data-toggle="tooltip" data-placement="top" title="LinkedIn">
+      </a>
+      <span class="logo-space"></span>
+      <a href="https://github.com/andrew-cui" target="_blank">
+        <img class="portfolio-img img-responsive img-center center-block"
+        src="img/logos/github2.png"
+        data-toggle="tooltip" data-placement="top" title="GitHub">
+      </a>
+      <span class="logo-space"></span>
+      <a href="https://www.instagram.com/cui._.sine/" target="_blank">
+        <img class="portfolio-img img-responsive img-center center-block"
+        src="img/logos/instagram3.png"
+        data-toggle="tooltip" data-placement="top" title="Instagram">
+      </a>
+      <span class="logo-space"></span>
+      <a href="https://medium.com/@andrewcui" target="_blank">
+        <img class="img-responsive img-center center-block"
+        src="img/logos/medium5.png"
+        style="position: relative; top: -3px; height: 43px;"
+        data-toggle="tooltip" data-placement="top" title="Medium">
+      </a>
+      <span class="logo-space"></span>
+      <a href="files/resume.pdf" target="_blank">
+        <img class="img-responsive img-center center-block"
+        src="img/logos/resume.png" data-toggle="tooltip"
+        data-placement="top" title="Resume" style="position: relative; top: -3px; height: 43px;">
+      </a>
     </div>
   </div>
 </div>
 
-<!-- Spacefiller -->
-<div id="education" class="container-fluid spacefill">
-  <hr color="white" align="center"/>
-</div>
-<!-- Education -->
-<div class="container-fluid education">
+<!-- education -->
+<div id="education" class="container-fluid education">
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-3">
       <h2><b>Education</b></h2>
-      <br /><br />
+      <span class="line"></span>
     </div>
     <div class="col-sm-8"></div>
   </div>
@@ -193,23 +229,23 @@
     <div class="col-sm-10">
       <div class="row">
          <div class="col-sm-4 mt">
-           <img class="img-circle rounded-circle center-block" src="files/education/mt.jpeg" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/mt.jpeg" width="160" height="160">
            <br />
-           <h4 class="text-center">Management and Technology Program</h4>
+           <h4 class="text-center">M&T</h4>
            <p class="text-center">2016 - 2020</p>
            <hr width="70%" color="white"/>
            <p class="text-center">
              Cumulative GPA: <b>3.66</b>
              <br />
-             <u><a class=href="http://www.upenn.edu/fisher">Program Website</a></u>
+             <u><a class=href="http://www.upenn.edu/fisher" target="_blank">Program Website</a></u>
            </p>
-           <p class="text-left">
-             <br />
+           <p class="text-left" style="margin-top: 10px;">
+             <br /><br />
              One of 61 members of the Jerome Fisher Program in Management and Technology Class of 2020, pursuing dual Bachelor's Degrees from the Engineering and Wharton Schools at Penn.
            </p>
          </div>
          <div class="col-sm-4 wharton">
-           <img class="img-circle rounded-circle center-block" src="files/education/wharton.jpeg" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/wharton.jpeg" width="160" height="160">
            <br />
            <h4 class="text-center">The Wharton School</h4>
            <p class="text-center">2016 - 2020</p>
@@ -223,13 +259,13 @@
              <ul>
                <li><b>STAT 430</b>: Probability</li>
                <li><b>MGMT 101</b>: Introduction to Management</li>
-               <li><b><u><a href="https://leadership.wharton.upenn.edu/management-100/" color="white">MGMT 100</b></a></u>: Leadership and Communication in Groups (discontinued)</li>
+               <li><b><u><a href="https://leadership.wharton.upenn.edu/management-100/" color="white" target="_blank">MGMT 100</a></u></b>: Leadership and Communication in Groups (discontinued)</li>
                <li><b>LGST 210</b>: Corporate Responsibility/Ethics</li>
              </ul>
            </p>
          </div>
          <div class="col-sm-4 seas">
-           <img class="img-circle rounded-circle center-block" src="files/education/seas.jpg" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/seas.jpg" width="160" height="160">
            <br />
            <h4 class="text-center">School of Engineering</h4>
            <p class="text-center">2016 - 2020</p>
@@ -241,9 +277,9 @@
              <br /><br />
              Coursework:
              <ul>
-               <li><b><u><a href="http://cis160.com">CIS 160</a></u></b>: Mathematical Foundations of Computer Science</li>
-               <li><b><u><a href="http://seas.upenn.edu/~cis120">CIS 120</a></u></b>: Programming Languages/Tech. I</li>
-               <li><b><u><a href="https://www.math.upenn.edu/~rpowers/math-240.html">MATH 240</a></u></b>: Differential Equations and Linear Algebra, Calculus III</li>
+               <li><b><u><a href="http://cis160.com" target="_blank">CIS 160</a></u></b>: Mathematical Foundations of Computer Science</li>
+               <li><b><u><a href="http://seas.upenn.edu/~cis120" target="_blank">CIS 120</a></u></b>: Programming Languages/Tech. I</li>
+               <li><b><u><a href="https://www.math.upenn.edu/~rpowers/math-240.html" target="_blank">MATH 240</a></u></b>: Differential Equations and Linear Algebra, Calculus III</li>
                <li><b>EAS 203</b>: Engineering Ethics</li>
              </ul>
            </p>
@@ -254,7 +290,7 @@
       <br />
       <div class="row">
          <div class="col-sm-4 bhs">
-           <img class="img-circle rounded-circle center-block" src="files/education/bhs.png" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/bhs.png" width="160" height="160">
            <br />
            <h4 class="text-center">Brighton High School</h4>
            <p class="text-center">2012 - 2016</p>
@@ -264,11 +300,12 @@
              <br />
              SAT: <b>2360</b>,
              ACT: <b>36</b>
-             <br /><br />
-             <ul class="text-left">
+           </p>
+           <p>
+             <ul class="text-left" style="margin-top: 22.5px;">
                <li>National Merit Scholar</li>
                <li>
-                 Admitted and invited to join the <a href="https://engineering.jhu.edu/magazine/2017/01/15-million-establishes-clark-scholars-program/#.WRo6VRPyuRs"><i>inaugural class</i></a> of Johns Hopkins University <a href="https://clarkscholars.jhu.edu/"><b>Clark Engineering Scholars</b></a>
+                 Admitted and invited to join the <a href="https://engineering.jhu.edu/magazine/2017/01/15-million-establishes-clark-scholars-program/#.WRo6VRPyuRs" target="_blank"><i>inaugural class</i></a> of Johns Hopkins University <a href="https://clarkscholars.jhu.edu/" target="_blank"><b>Clark Engineering Scholars</b></a>
                </li>
                <li>Presidential Scholar Candidate</li>
                <li>2x National AP Scholar (2015, 2016)</li><br />
@@ -279,7 +316,7 @@
            </p>
          </div>
          <div class="col-sm-4 ur">
-           <img class="img-circle rounded-circle center-block" src="files/education/ur.png" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/ur.png" width="160" height="160">
            <br />
            <h4 class="text-center">University of Rochester</h4>
            <p class="text-center">08/2015 - 12/2015</p>
@@ -289,11 +326,11 @@
              <br />
              GPA: <b>4.00</b>
              <br /><br />
-             Received a grade of A in <a href="https://web.math.rochester.edu/courses/current/165/"><b>MTH 165</b></a>: Linear Algebra with Differential Equations during Fall 2015 as a high school senior. 4.0 CU earned in college credit.
+             Received a grade of A in <a href="https://web.math.rochester.edu/courses/current/165/" target="_blank"><b>MTH 165</b></a>: Linear Algebra with Differential Equations during Fall 2015 as a high school senior. 4.0 CU earned in college credit.
            </p>
          </div>
          <div class="col-sm-4 ecms">
-           <img class="img-circle rounded-circle center-block" src="files/education/eastman/eastman-3.jpeg" width="160" height="160">
+           <img class="img-circle rounded-circle center-block" src="img/education/eastman/eastman-3.jpeg" width="160" height="160">
            <br />
            <h4 class="text-center">Eastman Community Music School</h4>
            <p class="text-center">2007 - 2016</p>
@@ -305,8 +342,8 @@
              <br /><br />
              Presented a lecture-recital titled <i>Tertian Relations in the Mendelssohn Violin Concerto</i> after analyzing the piece over the course of the 2015-2016 school year for the Pre-Collegiate Diploma Theory Project.
              <ul>
-               <li><a href="files/education/eastman/theory-paper.pdf">Paper</a></li>
-               <li><a href="files/education/eastman/theory-presentation.pdf">Presentation</a></li>
+               <li><a href="files/education/eastman-theory-paper.pdf" target="_blank">Paper</a></li>
+               <li><a href="files/education/eastman-theory-presentation.pdf" target="_blank">Presentation</a></li>
              </ul>
              Received a score of 5 on the AP Music Theory Exam, Spring 2014.
            </p>
@@ -317,16 +354,13 @@
   </div>
 </div>
 
-<!-- Spacefiller -->
-<div id="experience" class="container-fluid spacefill">
-  <hr color="white" align="center"/>
-</div>
-<!-- Experience -->
-<div class="container-fluid experience">
+<!-- experience -->
+<div id="experience" class="container-fluid experience">
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-3">
       <h2 color="(0, 180, 180)" align="left"><b>Experience</b></h2>
+      <span class="line"></span>
     </div>
     <div class="col-sm-8"></div>
     <!--<div class="col-sm-3">
@@ -340,7 +374,7 @@
       <div class="row">
         <div class="col-sm-3">
           <br />
-          <img class="img center-block" src="files/experience/c1.png" width="90%" />
+          <img class="img center-block" src="img/experience/c1.png" width="90%" />
           <br />
           <p class="text-center">06/2017 - 08/2017<br />
           McLean, VA</p>
@@ -364,7 +398,7 @@
       <div class="row">
         <div class="col-sm-3">
           <br />
-          <img class="img center-block" src="files/experience/muse.png" width="90%" />
+          <img class="img center-block" src="img/experience/muse.png" width="90%" />
           <br />
           <p class="text-center">01/2017 - present<br />
           University of Pennsylvania</p>
@@ -391,7 +425,7 @@
       <div class="row">
         <div class="col-sm-3">
           <br />
-          <img class="img center-block" src="files/experience/sfcu.png" width="90%" />
+          <img class="img center-block" src="img/experience/sfcu.png" width="90%" />
           <br />
           <p class="text-center">09/2016 - present<br />
           University of Pennsylvania</p>
@@ -399,13 +433,12 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-8">
           <h2>Student Federal Credit Union</h2>
-          <h4>Incoming Asst. Director of Member Services</h4>
-          <h4>Operations, Human Resources, and Marketing Committee Member</h4>
+          <h4>Incoming Asst. Director of Member Services<br />Operations, Human Resources, and Marketing Committee Member</h4>
           <ul>
             <li>As Asst. Director of Member Services and a member of Operations leadership, will resolve VISA card fraud cases and charge end-of-month fees</li>
             <li>Interact with members of a $7MM AUM student-run credit union, resolve account issues including: creation and deletion, VISA debit card setup and card limits, processing wires, and electronic services such as online banking</li>
             <li>Helped coordinate Spring 2017 recruitment of ~28 tellers, plan social and professional development events for credit union staff</li>
-            <li>Designed graphics for debit card interchange marketing collaboration with local businesses including HubBub Coffee and Jake's Sandwich Board</li>
+            <li>Designed graphics for debit card interchange marketing collaboration with local businesses including <a href="http://www.hubbubcoffee.com/" target="_blank">HubBub Coffee</a> and <a href="https://www.jakessandwichboard.com/" target="_blank">Jake's Sandwich Board</a></li>
           </ul>
         </div>
       </div>
@@ -419,7 +452,7 @@
       <div class="row">
         <div class="col-sm-3">
           <br />
-          <img class="img center-block" src="files/experience/icancode.png" width="90%" />
+          <img class="img center-block" src="img/experience/icancode.png" width="90%" />
           <br />
           <p class="text-center">03/2016 - 08/2016<br />
           Henrietta, NY</p>
@@ -429,7 +462,7 @@
           <h2>iCanCode Club</h2>
           <h4>Coding Instructor</h4>
           <ul>
-            <li>"iCanCode’s mission is to jump-start lower and middle school kids digital literacy and afford our youth in the Rochester community the opportunity to unlock their tech future and learn about computing in a fun digital sandbox." <i>(<a href="http://www.icancodeclub.com/">icancodeclub.com</a>)</i></li>
+            <li>"iCanCode’s mission is to jump-start lower and middle school kids digital literacy and afford our youth in the Rochester community the opportunity to unlock their tech future and learn about computing in a fun digital sandbox." <i>(<a href="http://www.icancodeclub.com/" target="_blank">icancodeclub.com</a>)</i></li>
             <li>Taught programming languages Scratch and JavaScript (introductory) to elementary and middle-school students at weekly lessons, afterschool programs, and vacation camps
             </li>
           </ul>
@@ -445,7 +478,7 @@
       <div class="row">
         <div class="col-sm-3">
           <br />
-          <img class="img center-block" src="files/experience/rit.gif" width="90%" />
+          <img class="img center-block" src="img/experience/rit.gif" width="90%" />
           <br />
           <p class="text-center">07/2015 - 08/2015<br />
           Rochester, NY</p>
@@ -453,8 +486,7 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-8">
           <h2>Rochester Institute of Technology</h2>
-          <h4>Center for Imaging Science Summer Intern</h4>
-          <h4>Imaging Systems Development Lab</h4>
+          <h4>Center for Imaging Science Summer Intern<br />Imaging Systems Development Lab</h4>
           <ul>
             <li>Part of a six-person team supervised by Joe Pow creating a fully functioning 3D camera built on two Raspberry Pi computers and enclosed in a 3D-printed case</li>
             <li>One of two high school students on the team</li>
@@ -468,40 +500,157 @@
   </div>
 </div>
 
+<!-- skills -->
+<div id="skills" class="container-fluid skills">
+  <h2 color="(0, 180, 180)" align="center"><b>Skills</b></h2>
+  <span class="line"></span>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>
+
+<!-- projects and portfolio -->
+<div id="portfolio" class="container-fluid portfolio">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <h2 color="(0, 180, 180)" align="center"><b>Portfolio and Projects</b></h2>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+  <span class="line"></span>
+  <div class="row portfolio-section website">
+    <div class="col-sm-5 portfolio-content">
+      <div class="row">
+        <div class="col-sm-11 portfolio-header">
+          <h2 class="text-left">Personal website</h2>
+          <h5>12.13.2016 - present</h5>
+          <hr width="30%" align="left" style="margin-bottom: 3%;"/>
+        </div>
+        <div class="col-sm-1 portfolio-hyper">
+          <a href="https://github.com/andrew-cui/andrew-cui.github.io"><img src="img/logos/github2.png" width="60px"/></a>
+        </div>
+      </div>
+      <div class="row">
+        <h4 style="font-size: 12pt; margin-bottom: 3%;"><i><a href="andrewcui.com" style="color: white;">andrewcui.com</a></i></h4>
+        <p><ul>
+            <li><b>Purpose:</b> Personal website, online resume, photography portfolio</li><br />
+            <li><b>Skills used:</b> HTML 5, CSS 3, Bootstrap 3.7</li><br />
+            <li><b>Future plans:</b> Learn Javascript and add interactive features, reduce dependency on template code</li>
+        </ul></p>
+      </div>
+    </div>
+    <div class="col-sm-7 portfolio-content">
+      <img class="img-responsive" src="img/portfolio/website/website-head.jpg"/>
+      <!-- <img class="img-responsive portfolio-img" src="img/portfolio/website/website-body.jpg" style="display: none;"/> -->
+    </div>
+  </div>
+  <div class="row portfolio-section cis120">
+    <div class="col-sm-7 portfolio-content portfolio-content-right">
+      <img class="img-responsive" src="img/portfolio/website/website-head.jpg"/>
+      <!-- <img class="img-responsive portfolio-img" src="img/portfolio/website/website-body.jpg" style="display: none;"/> -->
+    </div>
+    <div class="col-sm-5 portfolio-content portfolio-content-right">
+      <div class="row">
+        <div class="col-sm-11 portfolio-header">
+          <h2 class="text-left">Brickbreaker</h2>
+          <h5>11.23.16 - 12.12.16</h5>
+          <hr width="30%" align="left" style="margin-bottom: 3%;"/>
+        </div>
+        <div class="col-sm-1 portfolio-hyper">
+          <a href="https://github.com/andrew-cui/andrew-cui.github.io"><img src="img/logos/github2.png" width="60px"/></a>
+        </div>
+      </div>
+      <div class="row">
+        <h4 style="font-size: 12pt; margin-bottom: 3%;"><i><a href="http://www.seas.upenn.edu/~cis120/archive/16fa/hw/hw09/" style="color: white;">Assignment documentation</a></i></h4>
+        <p><ul>
+            <li>Imitation of Brickbreaker/Breakout using the Java Swing library, my CIS 120 final project at Penn.
+            </li><br />
+            <li><b>Skills used:</b> Java, Java.Swing, HTML,  Eclipse</li><br />
+            <li><b>Features: </b>Special bricks (changing ball speed, making bricks harder), .TXT auto-generated leaderboards.</li><br />
+        </ul></p>
+      </div>
+    </div>
+  </div>
+  <div class="row portfolio-section panko">
+    <div class="col-sm-5 portfolio-content">
+      <div class="row">
+        <div class="col-sm-11 portfolio-header">
+          <h2 class="text-left">Food-photo blog</h2>
+          <h5>07.09.16 - present (inactive 09.2016 - 05.2017)</h5>
+          <hr width="30%" align="left" style="margin-bottom: 3%;"/>
+        </div>
+        <div class="col-sm-1 portfolio-hyper">
+          <a href="https://www.instagram.com/cui._.sine/"><img src="img/logos/instagram3.png" width="60px"/></a>
+        </div>
+      </div>
+      <div class="row">
+        <h4 style="font-size: 12pt; margin-bottom: 3%;"><i><a href="https://www.instagram.com/cui._.sine/" style="color: white;">instagram</a></i></h4>
+        <p><ul>
+            <li>Created to showcase my portfolio of food photography, at the time a new interest. Used to explore and develop skills in photography, cooking, and photo editing.</li><br />
+            <li><b>Future plans: </b>Determine what types of images, tags, and times are best at drawing traffic to posts. </li>
+        </ul></p>
+      </div>
+    </div>
+    <div class="col-sm-7 portfolio-content">
+      <img class="img-responsive" src="img/portfolio/website/website-head.jpg"/>
+      <!-- <img class="img-responsive portfolio-img" src="img/portfolio/website/website-body.jpg" style="display: none;"/> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- awards -->
+<div id="awards" class="container-fluid awards">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <h2 color="(0, 180, 180)" align="center"><b>Awards</b></h2>
+      <span class="line"></span>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>
+
 </body>
 
-<!-- Footer -->
+<!-- footer -->
 <footer class="container-fluid footer">
   <h5>Created with HTML, CSS, and Bootstrap in Atom, hosted on GitHub Pages.</h5>
   <p align="center">
     Andrew Cui • <a href="mailto:email@andrewcui.com">email@andrewcui.com</a> • 12.13.16
     <br />
-    <a href="refs.md">References</a>
+    <a href="files/references.md" target="_blank">References</a>
   </p>
 </footer>
 
-<!-- JS scripts -->
+<!-- JS -->
 <script>
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
+  $("[data-toggle="tooltip"]").tooltip();
 });
 </script>
 <script>
-var intro = $("#intro").offset().top;
-var edu = $("#education").offset().top;
-var exp = $("#experience").offset().top;
-$(document).scroll(function(){
-  if($(this).scrollTop() < intro) {
-    $(".nav").css({"background-color":"transparent"});
-    $("li>a").css({"color":"rgba(10, 10, 10, 0.9)"});
-  }
-  else if($(this).scrollTop() > edu && $(this).scrollTop() < exp) {
-    $(".nav").css({"background-color":"rgb(0, 180, 180)"});
-    $("li>a").css({"color":"white"});
-  } else {
-    $(".nav").css({"background-color":"white"});
-    $("li>a").css({"color":"rgba(10, 10, 10, 0.9)"});
-  }
+$(document).ready(function(){
+  $("body").scrollspy({
+    target: ".navbar"
+  });
+
+  $(".nav a").on("click", function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $("html, body").animate(
+      {scrollTop: $(hash).offset().top}, 800, function()
+      {
+        window.location.hash = hash;
+      });
+    }
+  });
 });
 </script>
 </html>
