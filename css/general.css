@@ -1,0 +1,112 @@
+/*
+ * General setup for webpages
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:900,700,400|Khula:400';
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+head {
+  background-color: white;
+}
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  min-width: 100vw;
+}
+
+/* Navigation bar */
+.nav {
+  transition-duration: 1s;
+}
+.navbar-fixed-top {
+  background-image: none;
+  width: 100vw;
+}
+.navbar-nav {
+  padding: 0;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  margin: 0;
+  background-color: transparent;
+  font-family: "Khula";
+  font-size: 13pt;
+  color: rgba(10, 10, 10, 0.9);
+}
+.navbar-nav a {
+  font-weight: 400;
+  color: rgba(10, 10, 10, 0.9);
+}
+.navbar-nav a:hover {
+  background-color: white !important;
+  height: 7.5vh;
+  color: rgba(10, 10, 10, 0.9);
+}
+.navbar-toggle {
+  background-color: white;
+}
+.navbar-nav li.active, li.active a, li.active a:hover {
+  background-color: white;
+  color: rgba(10, 10, 10, 0.9);
+  height: 7.5vh;
+}
+
+/* General container */
+.container-fluid {
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Spacefiller */
+.spacefill {
+  margin-top: 0.15%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  opacity: 0;
+  margin-bottom: 0.75%;
+}
+
+/* Button */
+.btn a {
+  color: rgb(90, 90, 90);
+}
+/* General styling */
+p a {
+  color: rgb(0, 180, 180);
+}
+.img-circle {
+  padding: 4px;
+}
+.img-circle {
+  color: white;
+  background-color: white;
+}
+
+/* Footer */
+.footer {
+  align-self: center;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  background-color: rgb(240, 244, 248) !important;
+  border-radius: 1px;
+  border-color: rgb(90, 90, 90);
+}
+.footer h5 {
+  text-align: center;
+  padding: 0px;
+}
+.footer a {
+  padding: 3px;
+  color: navy;
+}
+
+/* Setting default font style */
+p, li, li>a, li>a:hover {
+  font-family: "Khula", sans-serif !important;
+  font-size: 11pt;
+  line-height: 150%;
+}

@@ -1,6 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:900,700,400|Khula:400';
+
 html {
-  height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
+
 head {
   background-color: white;
 }
@@ -27,11 +30,12 @@ body {
   padding-bottom: 0px;
   border: 0;
   margin-bottom: 0;
-  font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-family: "Khula";
+  font-size: 13pt;
   color: white;
 }
 .navbar-nav a  {
+  font-weight: 600;
   color: white !important;
 }
 .navbar-nav a:hover {
@@ -104,4 +108,10 @@ p a {
 .footer a {
   padding: 3px;
   color: navy;
+}
+
+/* Setting default font style */
+p, li, li>a, li>a:hover {
+  font-family: "Khula", sans-serif !important;
+  font-size: 11pt;
 }
