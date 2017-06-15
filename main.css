@@ -5,7 +5,6 @@ body {
   background-color: white;
 }
 
-
 /* General container */
 .container-fluid {
   background-color: white;
@@ -13,24 +12,25 @@ body {
   padding-bottom: 0px;
 }
 
-
 /* Navigation bar */
 .navbar-nav {
-  background-color: white;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  background-color: rgb(0, 180, 180);
   padding-top: 0px;
   padding-bottom: 0px;
   border: 0;
-  border-radius: 0;
   margin-bottom: 0;
   font-family: "Helvetica Neue";
   font-size: 14px;
-  color: black;
-}
-
-.navbar-nav li>a {
   color: white;
 }
-
+.navbar-nav a  {
+  color: white !important;
+}
+.navbar-nav a:hover {
+  color: rgb(215, 215, 215);
+}
 
  /* Intro */
 .intro {
@@ -39,20 +39,73 @@ body {
   color: rgb(90, 90, 90);
   padding-bottom: 3%;
 }
-
 .intro h1 {
-  color: black;
+  font-size: 50px;
+  color: rgb(0, 180, 180);
 }
 .intro h4 {
   color: black;
   text-align: left;
 }
+.intro-foot h1, h2, h3 {
+  color: rgb(0, 180, 180);
+}
+.intro-foot p, a {
+  color: rgb(90, 90, 90);
+  padding-bottom: 0%;
+}
 
-/* Paragraph styling */
+/* Spacefiller */
+.spacefill {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+ /* Education */
+.education {
+  padding-top: 1%;
+  background-color: rgb(0, 180, 180);
+  color: white;
+  padding-bottom: 3%;
+}
+.education h2 {
+  color: white;
+}
+.mt a {
+  color: white;
+}
+.mt a:hover {
+  color: rgb(140, 140, 140);
+}
+.wharton a {
+  color: white;
+}
+.wharton a:hover {
+  color: navy;
+}
+.seas a {
+  color: white;
+}
+.seas a:hover {
+  color: crimson;
+}
+
+/* Experience */
+.experience {
+ background-color: white;
+ color: rgb(0, 180, 180);
+ padding-bottom: 3%;
+}
+
+ /* Button */
+.btn a {
+  color: rgb(90, 90, 90);
+}
+
+/* General styling */
 p {
   line-height: 150%;
 }
-
 p a {
   color: rgb(0, 180, 180);
 }
@@ -61,7 +114,10 @@ p a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+.img-circle {
+  color: white;
+  background-color: white;
+}
 
 /* Footer */
 .footer{
@@ -69,7 +125,6 @@ p a {
   padding-top: 25px;
   background-color: white;
 }
-
 .footer h5 {
   text-align: center;
   padding: 0px;

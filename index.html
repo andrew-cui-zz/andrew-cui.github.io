@@ -36,8 +36,8 @@
 
 
 <!-- Navigation bar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid" style="background-color:white;">
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid" style="background-color:rgb(0, 180, 180);">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
         <span class="icon-bar"></span>
@@ -47,76 +47,252 @@
     </div>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="/portfolio/index.html">Portfolio</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-home" data-toggle="tooltip" data-placement="bottom" title="Home"></i></a></li>
+        <li><a href="#education"><i class="glyphicon glyphicon-education" data-toggle="tooltip" data-placement="bottom" title="Education"></i></a></li>
+        <li><a href="#experience"><i class="glyphicon glyphicon-briefcase" data-toggle="tooltip" data-placement="bottom" title="Experience"></i></a></li>
+        <li><a href="portfolio/index.html"><i class="glyphicon glyphicon-folder-open" data-toggle="tooltip" data-placement="right" title="Portfolio/Skills"></i></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="mailto:email@andrewcui.com">Email  <i class="glyphicon glyphicon-envelope"></i></a></li>
+        <li><a href="http://www.calendly.com/andrewcui"><i class="glyphicon glyphicon-calendar" data-toggle="tooltip" data-placement="bottom" title="Let's meet"></i></a></li>
+        <li><a href="mailto:email@andrewcui.com"><i class="glyphicon glyphicon-send" data-toggle="tooltip" data-placement="bottom" title="Contact me"></i></a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-<!-- About Me header -->
+<!-- Introduction -->
 <div class="container-fluid intro">
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-4">
-      <img class="img-responsive img-circle center-block" style="display-inline" src="files/profile.jpg" width="60%" height="60%">
-      <div class="row text-center">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-2 center-block">
-          <a href="https://www.linkedin.com/in/yiquncui"><img class="img-responsive img-center center-block" src="files/logos/linkedin.png" width="32" height="32"></a>
+    <div class="col-sm-5">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">
+        <img class="img-responsive img-circle center-block" style="display-inline" src="files/profile.jpg" width="60%" height="60%">
+        <div class="row text-center">
+          <br />
+          <div class="col-sm-3"></div>
+          <div class="col-sm-2 center-block">
+            <a href="https://www.linkedin.com/in/yiquncui"><img class="img-responsive img-center center-block" src="files/logos/linkedin.png" width="32" height="32" data-toggle="tooltip" data-placement="left" title="LinkedIn"></a>
+          </div>
+          <div class="col-sm-2 center-block">
+            <a href="https://github.com/andrew-cui"><img class="img-responsive img-center center-block" src="files/logos/github.png" width="32" height="32" data-toggle="tooltip" data-placement="top" title="GitHub"></a>
+          </div>
+          <div class="col-sm-2 center-block">
+            <a href="https://www.instagram.com/andrewc.photo/"><img class="img-responsive img-center center-block" src="files/logos/instagram.png" width="32" height="32" data-toggle="tooltip" data-placement="right" title="Photo blog"></a>
+          </div>
+          <div class="col-sm-3"></div>
         </div>
-        <div class="col-sm-2 center-block">
-          <a href="https://github.com/andrew-cui"><img class="img-responsive img-center center-block" src="files/logos/github.png" width="32" height="32"></a>
+        <br />
+        <div class="row text-center resume">
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="click to view"><a href="files/resume.pdf" target="_blank">resume</a></button>
         </div>
-        <div class="col-sm-2 center-block">
-          <a href="https://andrewcui.myportfolio.com"><img class="img-responsive img-center center-block" src="files/logos/adobe_portfolio.svg" width="32" height="32"></a>
-        </div>
-        <div class="col-sm-3"></div>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="text-center">
-        <h1 text-size="20px">
-          Andrew Cui
+        <h1>
+          <b>Andrew Cui</b>
         </h1> <br />
         <h4>About Me</h4>
           <div class="col-sm-2"></div>
           <div class="col-sm-10">
-            <p  align="right">
-              Rising sophomore in the Management and Technology dual-degree program at the University of Pennsylvania studying <a href="http://www.cis.upenn.edu/current-students/undergraduate/index.php">computer science</a>, <a href="https://fnce.wharton.upenn.edu/programs/undergraduate/">finance, </a><a href="https://statistics.wharton.upenn.edu/programs/undergraduate/statistics-concentration/">statistics,</a> and <a href="https://oid.wharton.upenn.edu/programs/undergraduate/">operations, information, and decisions</a>.
+            <p align="right">
+              Rising sophomore in the Management and Technology program at the University of Pennsylvania studying <a href="http://www.cis.upenn.edu/current-students/undergraduate/index.php">computer science</a>, <a href="https://fnce.wharton.upenn.edu/programs/undergraduate/">finance, </a><a href="https://statistics.wharton.upenn.edu/programs/undergraduate/statistics-concentration/">statistics,</a> and <a href="https://oid.wharton.upenn.edu/programs/undergraduate/">operations, information, and decisions</a>.
             </p>
           </div>
         <h4>Interests</h4>
           <div class="col-sm-2"></div>
           <div class="col-sm-10">
             <p align="right">
-              Data science/analytics, machine learning, quantitative finance, web dev.
+              Data science/analytics, machine learning, quantitative finance, web dev
               <br />
-              Running, photography, graphic design.
+              Running, photography, graphic design
             </p>
           </div>
         <h4>What I'm doing</h4>
           <div class="col-sm-2"></div>
           <div class="col-sm-10">
             <p align="right">
-              Working as a Product Management and Analytics Intern for <a href="https://www.capitalone.com/">Capital One</a>. Learning Python, HTML/CSS. Taking Andrew Ng's <a href="https://www.coursera.org/learn/machine-learning">Coursera ML class</a> and a Wall Street Passport course focused on accounting and finance skills.
+              Product Management and Analytics Intern for <a href="https://www.capitalone.com/">Capital One</a>
+              <br />Learning Python, HTML/CSS. Taking Andrew Ng's <a href="https://www.coursera.org/learn/machine-learning">Coursera ML class</a> and a Wall Street Passport course focused on accounting and finance skills.
             </p>
           </div>
+          <div class="col-sm-1"></div>
+      </div>
+    </div>
+  </div>
+  <div class="intro-foot" align="center">
+    <br />
+    <hr />
+    <h2 text-color="rgb(0, 180, 180)">Welcome to my website.</h2>
+    <br />
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-2">
+        <a href="#"><i class="glyphicon glyphicon-chevron-up" data-toggle="tooltip" data-placement="left" title="this doesn't do anything yet..."></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="#education"><i class="glyphicon glyphicon-chevron-down" data-toggle="tooltip" data-placement="right" title="but this one does!"></i></a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Spacefiller -->
+<div id="education" class="container-fluid spacefill">
+  <hr color="white" align="center"/>
+</div>
+<!-- Education -->
+<div class="container-fluid education">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      <h2>Education</h2>
+      <br /><br />
+    </div>
+    <div class="col-sm-8"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+         <div class="col-sm-4 mt">
+           <img class="img-circle rounded-circle center-block" src="files/education/mt.jpeg" width="160" height="160">
+           <br />
+           <h4 class="text-center">Management and Technology Program</h4>
+           <p class="text-center">2016 - 2020</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             Cumulative GPA: <b>3.66</b>
+             <br />
+             <u><a class=href="http://www.upenn.edu/fisher">Program Website</a></u>
+           </p>
+           <p class="text-left">
+             <br />
+             One of 61 members of the Jerome Fisher Program in Management and Technology Class of 2020, pursuing dual Bachelor's Degrees from the Engineering and Wharton Schools at Penn.
+           </p>
+         </div>
+         <div class="col-sm-4 wharton">
+           <img class="img-circle rounded-circle center-block" src="files/education/wharton.jpeg" width="160" height="160">
+           <br />
+           <h4 class="text-center">The Wharton School</h4>
+           <p class="text-center">2016 - 2020</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             <i>B.S. in Economics</i>
+             <br />
+             <b>Finance, Statistics, OIDD</b>
+             <br /><br />
+             Coursework:
+             <ul>
+               <li><b>STAT 430</b>: Probability</li>
+               <li><b>MGMT 101</b>: Introduction to Management</li>
+               <li><b><u><a href="https://leadership.wharton.upenn.edu/management-100/" color="white">MGMT 100</a></u></b>: Leadership and Communication in Groups (discontinued)</li>
+               <li><b>LGST 210</b>: Corporate Responsibility/Ethics</li>
+             </ul>
+           </p>
+         </div>
+         <div class="col-sm-4 seas">
+           <img class="img-circle rounded-circle center-block" src="files/education/seas.png" width="160" height="160">
+           <br />
+           <h4 class="text-center">School of Engineering</h4>
+           <p class="text-center">2016 - 2020</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             <i>B.S. in Engineering</i>
+             <br />
+             <b>Computer Science</b>
+             <br /><br />
+             Coursework:
+             <ul>
+               <li><b><u><a href="http://cis160.com">CIS 160</a></u></b>: Mathematical Foundations of Computer Science</li>
+               <li><b><u><a href="http://seas.upenn.edu/~cis120">CIS 120</a></u></b>: Programming Languages/Tech. I</li>
+               <li><b>MATH 240</b>: Differential Equations and Linear Algebra, Calculus III</li>
+               <li><b>EAS 203</b>: Engineering Ethics</li>
+             </ul>
+           </p>
+         </div>
+      </div>
+      <br />
+      <hr style="border: solid 2px; height: 0px;" width="100%"/>
+      <br />
+      <div class="row">
+         <div class="col-sm-4 bhs">
+           <img class="img-circle rounded-circle center-block" src="files/education/bhs.png" width="160" height="160">
+           <br />
+           <h4 class="text-center">Brighton High School</h4>
+           <p class="text-center">2012 - 2016</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             GPA: <b>3.99</b>
+             <br />
+             SAT: <b>2360</b>,
+             ACT: <b>36</b>
+             <br /><br />
+             <ul class="text-left">
+               <li>NYS Regents Scholarship for Academic Excellence, Spring 2016</li>
+               <li>National Merit Scholar, Spring 2016</li>
+               <li>Presidential Scholar Candidate, Winter 2016</li>
+               <li>National AP Scholar, Summer 2015-2016</li>
+               <li>George Eastman Young Leaders Award Winner, Spring 2015</li>
+               <li>4x AIME qualifier, 2x USChO School Nominee, 2x All-State Violinist</li>
+             </ul>
+           </p>
+         </div>
+         <div class="col-sm-4 ur">
+           <img class="img-circle rounded-circle center-block" src="files/education/ur.png" width="160" height="160">
+           <br />
+           <h4 class="text-center">University of Rochester</h4>
+           <p class="text-center">08/2015 - 12/2015</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             <i>Non-matriculated student</i>
+             <br />
+             GPA: <b>4.00</b>
+             <br /><br />
+             Received 4.0 CU and a grade of A in <b>MTH 165</b>: Linear Algebra with Differential Equations during Fall 2015 as a high school senior.
+           </p>
+         </div>
+         <div class="col-sm-4 ecms">
+           <img class="img-circle rounded-circle center-block" src="files/education/eastman-3.jpeg" width="160" height="160">
+           <br />
+           <h4 class="text-center">Eastman Community Music School</h4>
+           <p class="text-center">2007 - 2016</p>
+           <hr width="70%" color="white"/>
+           <p class="text-center">
+             <i>Pre-Collegiate Diploma</i>
+             <br />
+             <b>Music Theory</b>
+             <br /><br />
+             Presented a lecture-recital titled <i>Tertian Relations in the Mendelssohn Violin Concerto</i> after analyzing the piece and writing a report about the harmonic structures. Received a score of 5 on the AP Music Theory Exam, Spring 2014.
+           </p>
+         </div>
       </div>
     </div>
     <div class="col-sm-1"></div>
   </div>
 </div>
 
+<!-- Spacefiller -->
+<div id="experience" class="container-fluid spacefill">
+  <hr color="white" align="center"/>
+</div>
+<!-- Experience -->
+<div class="container-fluid experience">
+  <div class="row">
+    <div class="col-sm-4">
 
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-3">
+      <h2 color="(0, 180, 180)" align="right">Experience</h2>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
 
 </body>
 <footer class="container-fluid footer">
@@ -128,4 +304,10 @@
   </p>
 </footer>
 
+<!-- JS scripts -->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 </html>
