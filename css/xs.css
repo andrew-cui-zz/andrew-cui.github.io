@@ -1,0 +1,111 @@
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 12pt;
+  }
+  .about,
+  .education,
+  .skills,
+  .experience {
+    width: 100%;
+  }
+  .bookshelf {
+    width: 90%;
+  }
+  h2 {
+    position: relative;
+    margin-top: 10%;
+  }
+  /***********
+  NAV
+  ***********/
+  .navbar {
+    padding-left: 0;
+  }
+  .navbar-nav .nav-link  {
+    padding-left: 1.5rem;
+    width: 45vw;
+  }
+  .navbar-collapse.collapse,
+  .navbar-collapse.collapsing {
+    padding: 3rem 0 0.75rem 0rem;
+    background-color: rgb(105,135,150);
+  }
+  a:hover.nav-link {
+    border-right: 2px solid white;
+  }
+  /***********
+  INTRO
+  ***********/
+
+  /***********
+  EDUCATION
+  ***********/
+
+  /***********
+  SKILLS
+  ***********/
+  .skills {
+    padding: 5%;
+  }
+  .skills-toggler img {
+    max-width: 65%;
+  }
+  .skills-toggler h5 {
+    font-size: 1rem;
+  }
+  .collapse-skills {
+    margin-bottom: 15%;
+  }
+  .collapse-skills p {
+    font-size: 0.9rem;
+  }
+  /***********
+  EXPERIENCE
+  ***********/
+  .experience {
+    margin: 0; padding: 0;
+  }
+  .card {
+    border-left: none;
+    border-right: none;
+  }
+  .card-columns {
+    column-count: 1;
+  }
+  .card-columns .card {
+    margin-bottom: 5%;
+  }
+  .card-block {
+    padding: 1rem 0.75rem 0 0.75rem;
+  }
+  .card-header h3 {
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+  }
+  h4.card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+  .btn-resume {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  /***********
+  READING
+  ***********/
+  .bookshelf img {
+    width: 108px;
+    height: 162px;
+  }
+  /***********
+  FOOTER
+  ***********/
+  footer p {
+    font-size: 9pt;
+  }
+}

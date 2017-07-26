@@ -1,0 +1,61 @@
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 15pt;
+  }
+  /***********
+  NAV
+  ***********/
+
+  /***********
+  INTRO
+  ***********/
+
+  /***********
+  EDUCATION
+  ***********/
+
+  /***********
+  SKILLS
+  ***********/
+  .skills {
+    padding: 5% 10%;
+  }
+  .skills-toggler img {
+    max-width: 60%;
+  }
+  .skills-toggler h5 {
+    font-size: 0.9rem;
+  }
+  .collapse-skills {
+    width: 90%;
+  }
+  .collapse-skills p {
+    font-size: 0.75rem;
+  }
+  /***********
+  EXPERIENCE
+  ***********/
+  .card-columns {
+    column-count: 2;
+    column-gap: 3rem;
+  }
+  .card-text {
+    font-size: 0.625rem;
+    line-height: 1.05rem;
+  }
+  .btn-resume {
+    font-size: 0.75rem;
+  }
+  /***********
+  READING
+  ***********/
+  .bookshelf img {
+    width: 144px;
+    height: 216px;
+  }
+  /***********
+  FOOTER
+  ***********/
+}

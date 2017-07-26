@@ -1,0 +1,88 @@
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14pt;
+  }
+  .about,
+  .education,
+  .experience,
+  .reading {
+    width: 75%;
+  }
+  /***********
+  NAV
+  ***********/
+  .navbar {
+    padding: 0 12.5vw;
+  }
+  .navbar-nav .nav-link  {
+    width: 15vw;
+  }
+  /***********
+  INTRO
+  ***********/
+
+  /***********
+  SKILLS
+  ***********/
+  .skills {
+    padding: 5% 10%;
+  }
+  .skills-toggler img {
+    max-width: 40%;
+  }
+  .skills-toggler h5 {
+    font-size: 0.95rem;
+  }
+  .collapse-skills {
+    width: 60%;
+  }
+  .collapse-skills p {
+    font-size: 0.875rem;
+  }
+  /***********
+  EDUCATION
+  ***********/
+
+  /***********
+  EXPERIENCE
+  ***********/
+  .card-columns {
+    column-count: 2;
+    column-gap: 2.25rem;
+  }
+  .card-columns .card {
+    margin-bottom: 12.5%;
+  }
+  .card-block {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .card-header h3 {
+    font-size: 1.2rem;
+  }
+  h4.card-title {
+    font-size: 0.9rem;
+  }
+  .card-text {
+    font-size: 0.68rem;
+  }
+  .card-footer p {
+    font-size: 0.575rem;
+  }
+  .btn-resume {
+    font-size: 0.8rem;
+  }
+  /***********
+  READING
+  ***********/
+  .bookshelf img {
+    width: 132px;
+    height: 198px;
+  }
+  /***********
+  FOOTER
+  ***********/
+  footer p {
+    font-size: 10pt;
+  }
+}

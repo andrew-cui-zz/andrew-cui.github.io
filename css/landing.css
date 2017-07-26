@@ -1,0 +1,93 @@
+body {
+  background-color: transparent;
+  background-image:
+  url("https://static.pexels.com/photos/158335/rock-outcrop-rocks-rocky-geology-158335.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.landing {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.landing h1 {
+  font-family: "Oswald";
+  font-weight: 500;
+}
+.navbar {
+  margin: 0 auto;
+  padding: 0;
+  width: 40%;
+}
+.navbar-nav .nav-link {
+  height: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  border: 2px solid transparent;
+  transition: 0.25s ease;
+}
+.navbar, .nav-link, a:hover.nav-link {
+  border-radius: 10px;
+}
+.navbar-toggler {
+  margin: 0 auto;
+  margin-bottom: 10%;
+  width: 50px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler-icon {
+  width: 150%;
+  height: 150%;
+}
+@media only screen and (max-width: 575px) {
+  .landing {
+    top: 30%;
+    text-align: center;
+  }
+  .landing h1 {
+    font-size: 5rem;
+  }
+  .navbar {
+    background-color: transparent;
+    top: 50%;
+  }
+  .navbar-nav .nav-link {
+    width: 40vw;
+    text-align: center;
+  }
+  a:hover.nav-link {
+    border: 2px solid rgb(245,180,95);
+  }
+}
+@media only screen and (min-width: 576px) {
+  .landing {
+    top: 25%;
+  }
+  .landing h1 {
+    font-size: 5rem;
+  }
+  .navbar {
+    top: 60%;
+    height: 37px;
+    background-color: rgba(121,121,121,0.5);
+  }
+  .nav-link {
+    width: 20vw;
+    text-align: center;
+  }
+  a:hover.nav-link {
+    border: 2px solid rgb(245,180,95);
+  }
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}

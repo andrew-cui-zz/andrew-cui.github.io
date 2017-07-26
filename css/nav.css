@@ -1,0 +1,32 @@
+/* Navbar */
+
+/***********
+NAV
+***********/
+.navbar {
+  margin: 0; padding: 0;
+  background-color: rgba(121,121,121,0.5);
+  border: none;
+}
+.navbar-inverse .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler {
+  margin: 0.75rem 0;
+  padding-top: 0.15rem;
+  width: 50px;
+  height: 35px;
+  background-color: rgba(121,121,121,0.5);
+  border: none;
+}
+nav > button:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+.navbar-nav .nav-link  {
+  font-size: 10pt;
+  border: 2px solid transparent;
+}
