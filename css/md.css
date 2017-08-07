@@ -3,74 +3,162 @@
   html {
     font-size: 14pt;
   }
-  .about,
+  .intro,
   .education,
+  .skills,
   .experience,
-  .reading {
-    width: 75%;
+  .reading,
+  .contact {
+    margin: 0 auto;
+    width: 100%;
+  }
+  a.link {
+    border-radius: 6px;
+  }
+  a.transparent-link {
+    padding: 1.5% 4.5%;
+    border-radius: 8.5px;
   }
   /***********
   NAV
   ***********/
   .navbar {
-    padding: 0 12.5vw;
+    height: 37px;
+    padding: 0 10vw;
   }
   .navbar-nav .nav-link  {
-    width: 15vw;
+    padding: 7.25px 0;
+    width: 16vw;
+    text-align: center;
+  }
+  a:hover.nav-link {
+    border-top: 2.5px solid black;
   }
   /***********
   INTRO
   ***********/
+  .bio {
+    margin-bottom: 5%;
+    padding: 0 10%
+  }
+  .bio img {
+    width: 95%;
+  }
+  .tile {
+    padding: 2.5% 4%;
+  }
+  .tile p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .hyperlinks {
+    padding: 2% 15%;
+  }
+  .hyperlinks a {
+    margin: 0 3%;
+    height: 32px;
+  }
+  .hyperlinks img {
+    max-height: 32px;
+  }
+  .intro button {
+    font-size: 0.75rem;
+  }
 
+  /***********
+  EDUCATION
+  ***********/
+  .education section {
+    margin: 0 15% 4%;
+    padding: 2%;
+    border-radius: 10px;
+  }
+  .education section:last-of-type {
+    margin-bottom: 0;
+  }
+  .education h4 {
+    font-size: 14pt;
+    line-height: 18pt;
+  }
+  .education h5 {
+    font-size: 12pt;
+  }
+  .education-content img {
+    margin: 0 25% 7%;
+    width: 50%;
+  }
+  .education-activities img {
+    margin: 5% 10%;
+    width: 80%;
+  }
+  .education-mt p {
+    font-size: 9.5pt;
+    line-height: 13pt;
+  }
+  p.education-stats {
+    font-size: 11.5pt;
+  }
+  p.education-text,
+  ul.education-courses > li  {
+    font-size: 10pt;
+  }
+  p.education-text > a.link {
+    padding: 0.5% 2.5%;
+  }
   /***********
   SKILLS
   ***********/
   .skills {
-    padding: 5% 10%;
+    padding: 5% 15% 0;
   }
   .skills-toggler img {
-    max-width: 40%;
+    max-width: 50%;
   }
   .skills-toggler h5 {
     font-size: 0.95rem;
   }
   .collapse-skills {
-    width: 60%;
+    width: 50%;
   }
   .collapse-skills p {
     font-size: 0.875rem;
   }
-  /***********
-  EDUCATION
-  ***********/
 
   /***********
   EXPERIENCE
   ***********/
-  .card-columns {
-    column-count: 2;
-    column-gap: 2.25rem;
+  .experience {
+    padding: 5% 10% 0;
   }
-  .card-columns .card {
-    margin-bottom: 12.5%;
+  .experience-description {
+    margin: 5% 1.5%;
+    padding: 5% 7.5%;
+    border-radius: 10px;
   }
-  .card-block {
-    padding: 0.5rem 0.5rem 0 0.5rem;
+  .experience img {
+    margin: 0.5% auto;
+    max-height: 36px;
   }
-  .card-header h3 {
-    font-size: 1.2rem;
+  a.experience-link {
+    padding: 0.25% 0.8%;
+    border-radius: 10px;
   }
-  h4.card-title {
-    font-size: 0.9rem;
-  }
-  .card-text {
-    font-size: 0.68rem;
-  }
-  .card-footer p {
-    font-size: 0.575rem;
-  }
-  .btn-resume {
+  h5.experience-title {
     font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  p.experience-subhead {
+    font-size: 0.7rem;
+  }
+  a.link > .material-icons {
+    font-size: 13pt;
+  }
+  .experience-body {
+    margin: 3% 0 0 0;
+  }
+  p.experience-body {
+    font-size: 0.65rem;
+    line-height: 1rem;
   }
   /***********
   READING
@@ -78,6 +166,12 @@
   .bookshelf img {
     width: 132px;
     height: 198px;
+  }
+  /***********
+  CONTACT ME
+  ***********/
+  .contact {
+    padding: 4% 20% 0;
   }
   /***********
   FOOTER

@@ -1,10 +1,15 @@
 body {
   background-color: transparent;
-  background-image:
-  url("https://static.pexels.com/photos/158335/rock-outcrop-rocks-rocky-geology-158335.jpeg");
+  background-image: url('../img/landing/landing-1.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  overflow-y: hidden;
+}
+html,
+body,
+main {
+  background-color: transparent;
 }
 .landing {
   position: absolute;
@@ -13,17 +18,18 @@ body {
   text-align: center;
 }
 .landing h1 {
-  font-family: "Oswald";
+  padding-top: 0.5%;
+  /*background-color: rgba(40,40,40,0.6);*/
+  font-family: "Yantramanav";
   font-weight: 500;
+  text-transform: uppercase;
 }
 .navbar {
   margin: 0 auto;
   padding: 0;
-  width: 40%;
 }
 .navbar-nav .nav-link {
   height: 100%;
-  font-size: 14px;
   color: white;
   font-weight: 300;
   border: 2px solid transparent;
@@ -47,47 +53,71 @@ body {
   width: 150%;
   height: 150%;
 }
-@media only screen and (max-width: 575px) {
+a:hover.nav-link {
+  background-color: rgba(255,255,255,0.9);
+  color: rgb(40,40,40);
+  border: 2px solid rgb(121,121,121);
+}
+.quote {
+  position: absolute;
+  width: 100%;
+  top: 92.4%;
+  color: white;
+  text-align: center;
+}
+.quote p { /* TODO: Use a fancy font here */
+  font-size: 1rem;
+  font-style: italic;
+}
+@media only screen and (max-width: 768px) {
   .landing {
     top: 30%;
     text-align: center;
   }
   .landing h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .navbar {
+    width: 35vw;
+    top: 55%;
     background-color: transparent;
-    top: 50%;
+  }
+  .navbar-nav,
+  .collapse.navbar-collapse,
+  .collapse.navbar-collapsing {
+    border-radius: 10px;
+    background-color: rgba(40,40,40,0.6);
   }
   .navbar-nav .nav-link {
-    width: 40vw;
+    width: 35vw;
+    font-size: 12.5pt;
     text-align: center;
-  }
-  a:hover.nav-link {
-    border: 2px solid rgb(245,180,95);
-  }
-}
-@media only screen and (min-width: 576px) {
-  .landing {
-    top: 25%;
-  }
-  .landing h1 {
-    font-size: 5rem;
-  }
-  .navbar {
-    top: 60%;
-    height: 37px;
-    background-color: rgba(121,121,121,0.5);
-  }
-  .nav-link {
-    width: 20vw;
-    text-align: center;
-  }
-  a:hover.nav-link {
-    border: 2px solid rgb(245,180,95);
   }
 }
 @media only screen and (min-width: 768px) {
+  .landing {
+    top: 27.5%;
+  }
+  .landing h1 {
+    font-size: 6rem;
+  }
+  .navbar {
+    width: 40vw;
+    height: 37px;
+    top: 60%;
+    background-color: rgba(40,40,40,0.6);
+  }
+  .navbar-nav .nav-link {
+    width: 20vw;
+    font-size: 12.25pt;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 992px) {
+  .navbar {
+    width: 30vw;
+  }
+  .navbar-nav .nav-link {
+    width: 15vw;
+  }
 }

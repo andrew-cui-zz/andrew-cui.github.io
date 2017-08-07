@@ -11,3 +11,8 @@ Created with HTML/CSS in Atom
 - 06/14/2017: Redesigning website from scratch with Bootstrap 4, having a better knowledge of HTML/CSS development. Trying out new color scheme and design ideas.
 
 - 07/26/2017: I've been working on and off for this, but had an idea for a new, more exciting design - updated as just the landing page for now, but more to come!
+
+- 08/06/2017: Relaunching new main section of website. SmoothScroll thanks to Chris Ferdinandi on GitHub!
+// TODO:
+  1. Continue and add projects/other content (ex: books)
+  2. Refactor HTML/CSS to improve website speed and code cleanliness

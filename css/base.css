@@ -22,30 +22,38 @@ main {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  background-color: rgb(253,253,253);
+  color: rgb(25,25,25);
 }
 main > section > div {
   margin: 0 auto;
 }
 section {
-  padding-top: 5%;
+  padding: 5% 0;
   margin-bottom: 0;
 }
-h1,
+h1 {
+  font-family: "Yantramanav";
+  font-weight: 500;
+}
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Yantramanav";
+  font-weight: 300;
 }
 h3,
 h4,
 h5,
 button > a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 h2 {
   text-align: center;
-  margin-bottom: 5%;
+  margin: 2.5% 0;
 }
 p {
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 0.75rem;
 }
 /***********
@@ -64,17 +72,13 @@ LINKS, NAV, BUTTONS, OBJECTS
 ***********/
 a,
 a:hover,
-a:active {
+a:active,
+a:focus {
   color: inherit;
 }
-a:hover.nav-link {
-  background-color: rgba(255,255,255,0.3);
-  color: white;
-  font-weight: 600;
-  transition: 0.5s ease;
-}
 .img-fluid:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
 }
 button a:hover {
   text-decoration: none;
@@ -84,7 +88,7 @@ button a:hover {
 }
 .btn:hover {
   opacity: 1;
-  box-shadow: 3px 4px 4px -1.5px rgb(150,150,150);
+  box-shadow: 3px 3px 3px -1px rgb(20,20,20);
 }
 .btn-site {
   position: relative;
@@ -102,26 +106,208 @@ button a:hover {
 [data-toggle=collapse] {
   cursor: pointer;
 }
+a.link {
+  padding: 0 1.5% 0.5%;
+  background-color: transparent;
+  border: 1px solid rgb(25,25,25);
+  border-radius: 5px;
+  text-decoration-line: none;
+}
+a.link:hover {
+  background-color: rgb(25,25,25);
+  color: white;
+  transition: 0.4s ease;
+}
+a.transparent-link {
+  margin-top: 1.5%;
+  border: none;
+  text-decoration-color: rgb(25,25,25);
+}
+ul {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+img.inactive {
+  opacity: 0.5;
+}
 /***********
 INTRO
 ***********/
 .intro {
-  background-color: rgb(105,135,150);
-  color: white;
+  padding: 0;
+  padding-top: 4.5%;
 }
-.about_photo > .img-fluid:hover {
+.about {
+  padding: 2.75% 20% 4.5%;
+  text-align: center;
+}
+.about h1 {
+  font-size: 3rem;
+}
+.about h5 {
+  font-size: 0.75rem;
+}
+.profile {
+  padding: 3% 7.5%;
+}
+.profile > img:hover{
   transform: none;
 }
+/* used in all sections */
+.tile {
+  background-color: rgb(245,245,245);
+  border-radius: 10px;
+}
+.intro .tile {
+  box-shadow:
+    0.5px 1.5px 1px rgba(140,140,150,0.7),
+    -0.5px -0.05px 1px rgba(140,140,150,0.7);
+}
+.hyperlinks {
+  position: relative;
+  background-color: rgba(121,121,121,0.1);
+  color: rgb(25,25,25);
+}
+.tile h5 {
+  margin: 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.hyperlinks img {
+  display: block;
+  width: auto;
+  height: auto;
+  opacity: 0.6;
+}
+.hyperlinks img:hover {
+  opacity: 1;
+  transition-duration: 0.35s;
+}
+
 /***********
 EDUCATION
 ***********/
-
+.education {
+  /*background: url('https://images.freecreatives.com/wp-content/uploads/2015/04/black-wood.png');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#upenn,
+#hs {
+  /*background-color: rgba(2,2,2,0.75);*/
+  box-shadow:
+    0.75px 2.5px 2px rgba(140,140,150,0.7),
+    -0.75px -0.25px 2px rgba(140,140,150,0.7);
+}
+.education h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.education-title {
+  position: relative;
+  margin-bottom: 1.5%;
+}
+.education-title img {
+  width: 90%;
+}
+hr {
+  background-color: rgba(25,25,25,0.5);
+  height: 0.25px;
+}
+#hs .col-md-4 hr {
+  display: none;
+}
+#hs .col-sm-6 hr {
+  display: block;
+  width: 20%;
+}
+#hs .col-sm-12 hr {
+  display: block;
+  width: 10%;
+}
+.education-content {
+  margin: 2% 10% 0 10%;
+  width: 80%;
+}
+.education-description {
+  margin: 0 auto;
+  width: 85%;
+}
+a.education-content {
+  margin-top: 1.5%;
+  border: none;
+}
+.education-activities {
+  padding: 0 7.5%;
+  width: 85%;
+}
+.education-activities .col-4 {
+  padding: 0;
+}
+.education-activities img {
+  display: inline;
+  min-width: 40px;
+  border-radius: 5%;
+}
+#hs h4,
+#online h4 {
+  text-align: center;
+}
+p.education-stats {
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-stat {
+  font-family: "Yantramanav", sans-serif;
+}
+.education-mt p {
+  margin: 0;
+  text-align: center;
+}
+.education-mt h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+a.mt-link {
+  padding: 0.75% 2.25%;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
+a.mt-link:hover {
+  background-color: rgba(25,25,25,0.5);
+  color: white;
+  transition: 0.4s ease;
+}
+.education-text {
+  margin-bottom: 0;
+  text-align: center;
+}
+p.education-text {
+  margin: 5% 0 7.5% 0;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 300;
+}
+p.education-text > a.link {
+  text-align: center;
+}
+.education-activities h4 {
+  margin: 0.5rem 0 0.75rem 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
 /***********
 SKILLS
 ***********/
 .skills {
-  background: white;
-  color: black;
+  padding-top: 0;
 }
 .skills-toggler {
   padding-top: 7.5%;
@@ -129,18 +315,18 @@ SKILLS
 }
 .skills-toggler h5 {
   padding-top: 7.5%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .collapse-skills {
   position: relative;
   margin: 0 auto; padding: 0;
-  width: 85%;
-  /*background-color: rgba(235, 235, 235, 0.5);*/
   border: 2.5px solid transparent;
+  text-align: center;
 }
 .collapse-skills p {
   margin-bottom: 0;
   padding: 8%;
+  font-family: 'Raleway', sans-serif;
 }
 #programming.collapse-skills {
   border-color: rgb(0,209,196) transparent;
@@ -161,81 +347,93 @@ SKILLS
 EXPERIENCE
 ***********/
 .experience {
-  margin: 0 auto;
+  /*background: url('https://static.pexels.com/photos/19068/mirror-light-black-glass.jpg');*/
+  /*background-repeat: no-repeat;
+  background-position: center center;
+  color: white;*/
+  min-height: 80%;
 }
-.business-card {
-  padding: 2.5%;
-  width: 50%;
-  border: 1px solid black;
+.experience h5 {
+  font-size: 0.9rem;
+  text-align: center;
 }
-.card-columns {
-  display: inline-block;
+a.experience-link {
+  border: none;
+  text-decoration-color: black;
+}
+.experience-description {
+  position: relative;
+  width: 100%;
+  opacity: 0.6;
+  box-shadow:
+    0.25px 1.5px 1.25px rgba(140,140,150,0.7),
+    -0.25px -0.05px 1.25px rgba(140,140,150,0.7);
+  transition-duration: 0.5s;
+}
+.experience-description:hover {
+  background-color: rgb(250,250,250);
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.05, 1.05);
+}
+.experience-head {
   width: 100%;
 }
-.card-columns .card:last-child {
-  margin-bottom: 0;
+.experience-head > img {
+  display: block;
 }
-.card, .card-header, .card-footer {
-  border-radius: 0 !important;
-}
-.card-header {
-  padding: 0.7rem 0;
-}
-.card-header h3 {
-  margin: 0;
-  color: white;
+h5.experience-title {
+  margin-top: 2.5%;
+  width: 100%;
   text-align: center;
+  font-weight: 400;
 }
-.card-title {
-  display: inline;
-  color: rgb(60,60,60);
-}
-.card-block > ul {
-  padding: 1rem 1rem 0 1.5rem;
-  color: rgb(80,80,80);
-}
-.card-footer {
-  position: relative;
-  padding: 1% 0;
-  bottom: 100%;
-  background-color: rgba(240,240,240,0.7);
-  color: rgb(90,90,90);
-  border-top: 0.75px solid rgba(150,150,150,0.2);
-}
-.card-footer p {
-  margin: 0;
-  color: rgb(60,60,60);
+p.experience-subhead {
+  margin: 1% auto;
+  min-width: 40%;
+  font-family: "Oswald";
   text-align: center;
+  text-transform: uppercase;
 }
-#capitalone .card-header {
-  background-color:  #004977;
-}
-#sfcu .card-header {
-  background-color: rgb(166,0,27);
-}
-#muse .card-header {
-  background-color: rgb(227,105,66);
-}
-#icancode .card-header {
-  background-color: rgb(85,200,219);
-}
-.resume {
+a.link > .material-icons {
   position: relative;
+  margin: 0 auto;
+  top: 2.5px;
 }
-.btn-resume {
-  margin-top: 1.5%;
-  margin-bottom: 7.5%;
-  color: rgb(90,90,90);
-  border-color: rgb(90,90,90);
-}
-.btn-resume:hover {
-  color: white;
+.experience-subhead a.link {
+  margin-left: 5pt;
 }
 /***********
 READING
 ***********/
 .bookshelf img {
   border: 0.2px solid rgba(90,90,90,0.2);
+}
+
+/***********
+CONTACT ME
+***********/
+.contact {
+  padding: 5% 10% 0;
+}
+.contact h2 {
+  margin-bottom: 5%;
+}
+.contact p {
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+.contact a.link {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.75% 1.75% 1%;
+  border-radius: 10px;
+}
+.contact i {
+  position: relative;
+  padding-right: 1%;
 }
 /***********
 FOOTER

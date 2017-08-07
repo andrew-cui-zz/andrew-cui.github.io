@@ -5,28 +5,37 @@ NAV
 ***********/
 .navbar {
   margin: 0; padding: 0;
-  background-color: rgba(121,121,121,0.5);
+  background-color: white;
   border: none;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 .navbar-inverse .navbar-nav .nav-link {
-  color: white;
+  color: black;
 }
 .navbar-toggler:focus {
   outline: none;
 }
 .navbar-toggler {
   margin: 0.75rem 0;
-  padding-top: 0.15rem;
+  padding-top: 0.1rem;
   width: 50px;
   height: 35px;
-  background-color: rgba(121,121,121,0.5);
+  background-color: rgba(0,0,0,0.5);
   border: none;
 }
 nav > button:hover {
   opacity: 1;
   box-shadow: none;
+  transition: 0.25s ease;
 }
-.navbar-nav .nav-link  {
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+}
+a.nav-link  {
   font-size: 10pt;
-  border: 2px solid transparent;
+  border: 2.5px solid transparent;
+}
+.navbar-inverse .navbar-nav a:hover.nav-link {
+  color: black;
+  transition: 0.5s ease;
 }
