@@ -12,7 +12,7 @@ main {
   background-color: transparent;
 }
 .landing {
-  z-index: -2;
+  z-index: 1;
   position: fixed;
   width: 100%;
   max-height: 50%;
@@ -27,7 +27,8 @@ main {
   text-transform: uppercase;
 }
 .navbar {
-  z-index: -1;
+  position: fixed;
+  z-index: 2;
   margin: 0 auto;
   padding: 0;
 }
@@ -80,6 +81,7 @@ a:hover.nav-link {
     font-size: 4rem;
   }
   .navbar {
+    margin: 0 30vw;
     width: 40vw;
     top: 55%;
     background-color: transparent;
@@ -108,7 +110,8 @@ a:hover.nav-link {
     font-size: 5rem;
   }
   .navbar {
-    width: 35vw;
+    margin: 0 35vw;
+    width: 30vw;
     top: 55%;
     background-color: transparent;
   }
@@ -120,7 +123,7 @@ a:hover.nav-link {
   }
   .navbar-nav .nav-link {
     padding-top: 4px;
-    width: 35vw;
+    width: 30vw;
     font-size: 12pt;
     text-align: center;
   }
@@ -136,6 +139,7 @@ a:hover.nav-link {
     font-size: 6rem;
   }
   .navbar {
+    margin: 0 40vw;
     width: 20vw;
     height: 37px;
     top: 60%;
@@ -153,6 +157,7 @@ a:hover.nav-link {
 }
 @media only screen and (min-width: 992px) {
   .navbar {
+    margin: 0 43.75vw;
     width: 15vw;
   }
   .navbar-nav .nav-link {
