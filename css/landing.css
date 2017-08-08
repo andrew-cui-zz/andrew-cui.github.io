@@ -54,13 +54,13 @@ main {
 }
 a:hover.nav-link {
   background-color: rgba(255,255,255,0.9);
-  color: rgb(40,40,40);
-  border: 2px solid rgb(121,121,121);
+  color: rgb(25,25,25);
+  border: 2px solid rgba(25,25,25,0.75);
 }
 .quote {
   position: absolute;
-  width: 100%;
-  top: 92.4%;
+  margin: 0 10%;
+  width: 80%;
   color: white;
   text-align: center;
 }
@@ -70,27 +70,30 @@ a:hover.nav-link {
 }
 @media only screen and (max-width: 576px) {
   .landing {
-    top: 25%;
+    top: 30%;
     text-align: center;
   }
   .landing h1 {
-    font-size: 3.75rem;
+    font-size: 4rem;
   }
   .navbar {
     width: 45vw;
-    top: 60%;
+    top: 55%;
     background-color: transparent;
   }
   .navbar-nav,
   .collapse.navbar-collapse,
   .collapse.navbar-collapsing {
     border-radius: 10px;
-    background-color: rgba(40,40,40,0.6);
+    background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
     width: 45vw;
     font-size: 9.5pt;
     text-align: center;
+  }
+  .quote {
+    top: 90.5%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -110,12 +113,15 @@ a:hover.nav-link {
   .collapse.navbar-collapse,
   .collapse.navbar-collapsing {
     border-radius: 10px;
-    background-color: rgba(40,40,40,0.6);
+    background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
     width: 35vw;
     font-size: 12.5pt;
     text-align: center;
+  }
+  .quote {
+    top: 90.5%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -129,12 +135,15 @@ a:hover.nav-link {
     width: 40vw;
     height: 37px;
     top: 60%;
-    background-color: rgba(40,40,40,0.6);
+    background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
     width: 20vw;
     font-size: 12.25pt;
     text-align: center;
+  }
+  .quote {
+    top: 92%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -143,5 +152,8 @@ a:hover.nav-link {
   }
   .navbar-nav .nav-link {
     width: 15vw;
+  }
+  .quote {
+    top: 93%;
   }
 }
