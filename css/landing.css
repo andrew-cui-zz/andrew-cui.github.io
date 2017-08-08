@@ -12,8 +12,10 @@ main {
   background-color: transparent;
 }
 .landing {
+  z-index: -2;
   position: fixed;
   width: 100%;
+  max-height: 50%;
   color: white;
   text-align: center;
 }
@@ -25,6 +27,7 @@ main {
   text-transform: uppercase;
 }
 .navbar {
+  z-index: -1;
   margin: 0 auto;
   padding: 0;
 }
@@ -77,7 +80,7 @@ a:hover.nav-link {
     font-size: 4rem;
   }
   .navbar {
-    width: 45vw;
+    width: 40vw;
     top: 55%;
     background-color: transparent;
   }
@@ -88,7 +91,7 @@ a:hover.nav-link {
     background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
-    width: 45vw;
+    width: 40vw;
     font-size: 9.5pt;
     text-align: center;
   }
@@ -116,8 +119,9 @@ a:hover.nav-link {
     background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
+    padding-top: 4px;
     width: 35vw;
-    font-size: 12.5pt;
+    font-size: 12pt;
     text-align: center;
   }
   .quote {
@@ -132,14 +136,15 @@ a:hover.nav-link {
     font-size: 6rem;
   }
   .navbar {
-    width: 40vw;
+    width: 20vw;
     height: 37px;
     top: 60%;
     background-color: rgba(25,25,25,0.75);
   }
   .navbar-nav .nav-link {
+    padding-top: 4px;
     width: 20vw;
-    font-size: 12.25pt;
+    font-size: 12pt;
     text-align: center;
   }
   .quote {
@@ -148,7 +153,7 @@ a:hover.nav-link {
 }
 @media only screen and (min-width: 992px) {
   .navbar {
-    width: 30vw;
+    width: 15vw;
   }
   .navbar-nav .nav-link {
     width: 15vw;
