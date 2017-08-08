@@ -12,7 +12,7 @@ main {
   background-color: transparent;
 }
 .landing {
-  position: absolute;
+  position: fixed;
   width: 100%;
   color: white;
   text-align: center;
@@ -39,8 +39,7 @@ main {
   border-radius: 10px;
 }
 .navbar-toggler {
-  margin: 0 auto;
-  margin-bottom: 10%;
+  margin: 10% auto;
   width: 50px;
   height: 35px;
   background-color: transparent;
@@ -69,13 +68,38 @@ a:hover.nav-link {
   font-size: 1rem;
   font-style: italic;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
+  .landing {
+    top: 25%;
+    text-align: center;
+  }
+  .landing h1 {
+    font-size: 3.75rem;
+  }
+  .navbar {
+    width: 45vw;
+    top: 60%;
+    background-color: transparent;
+  }
+  .navbar-nav,
+  .collapse.navbar-collapse,
+  .collapse.navbar-collapsing {
+    border-radius: 10px;
+    background-color: rgba(40,40,40,0.6);
+  }
+  .navbar-nav .nav-link {
+    width: 45vw;
+    font-size: 9.5pt;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .landing {
     top: 30%;
     text-align: center;
   }
   .landing h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
   .navbar {
     width: 35vw;

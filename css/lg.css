@@ -51,8 +51,7 @@
   p.education-stats {
     font-size: 12pt;
   }
-  p.education-text,
-  ul.education-courses > li  {
+  p.education-text {
     font-size: 10.5pt;
   }
 

@@ -127,12 +127,15 @@
   p.education-stats {
     font-size: 11pt;
   }
-  p.education-text,
-  ul.education-courses > li  {
+  p.education-text {
     font-size: 9.5pt;
   }
   p.education-text > a.link {
     padding: 0.5% 1.5%;
+  }
+  #hs hr {
+    display: block;
+    width: 20%;
   }
   /***********
   SKILLS
@@ -169,7 +172,7 @@
     max-height: 28px;
   }
   a.experience-link {
-    padding: 0.5% 1.5%;
+    padding: 0.75% 1.75%;
     border-radius: 8px;
   }
   h5.experience-title {
