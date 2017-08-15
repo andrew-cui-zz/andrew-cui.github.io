@@ -3,15 +3,6 @@
   html {
     font-size: 13pt;
   }
-  .intro,
-  .education,
-  .skills,
-  .experience,
-  .reading,
-  .contact {
-    margin: 0 auto;
-    width: 100%;
-  }
   a.link {
     border-radius: 5px;
   }
@@ -115,7 +106,7 @@
     padding: 5% 10% 0;
   }
   .experience-description {
-    margin: 5% 0;
+    margin-top: 3%;
     padding: 2.5% 4%;
     border-radius: 10px;
   }
@@ -141,6 +132,33 @@
   /***********
   READING
   ***********/
+
+  /***********
+  PROJECTS
+  ***********/
+  .projects section {
+    margin: 3% 10%;
+    padding: 2.5% 2%;
+    border-radius: 10px;
+  }
+  .project h4 {
+    font-size: 1.25rem;
+  }
+  .project-details {
+    width: 90%;
+  }
+  /***********
+  PORTFOLIO
+  ***********/
+  .portfolio {
+    padding: 5% 10% 0;
+  }
+  .portfolio .col-6,
+  .portfolio .col-sm-4,
+  .portfolio .col-md-3,
+  .portfolio .col-lg-2 {
+    padding: 7px;
+  }
 
   /***********
   CONTACT ME

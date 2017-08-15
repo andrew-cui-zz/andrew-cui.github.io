@@ -34,12 +34,15 @@ section {
   padding: 5% 0;
   margin-bottom: 0;
 }
-h1 {
+h1,
+h2 {
   font-family: "Yantramanav";
+  color: rgb(60,60,60);
+}
+h1 {
   font-weight: 500;
 }
 h2 {
-  font-family: "Yantramanav";
   font-weight: 300;
 }
 h3,
@@ -354,8 +357,9 @@ a.experience-link {
 }
 .experience-description {
   position: relative;
+  margin: 0; /* default */
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.7;
   box-shadow:
     0.25px 1.5px 1.25px rgba(140,140,150,0.7),
     -0.25px -0.05px 1.25px rgba(140,140,150,0.7);
@@ -382,7 +386,7 @@ h5.experience-title {
 p.experience-subhead {
   margin: 1% auto;
   min-width: 40%;
-  font-family: "Oswald";
+  font-family: 'Oswald';
   text-align: center;
   text-transform: uppercase;
 }
@@ -392,7 +396,7 @@ a.link > .material-icons {
   top: 2.5px;
 }
 .experience-subhead a.link {
-  margin-left: 5pt;
+  margin-left: 0.5rem;
 }
 /***********
 READING
@@ -401,6 +405,102 @@ READING
   border: 0.2px solid rgba(90,90,90,0.2);
 }
 
+/***********
+PROJECTS
+***********/
+.projects {
+  padding-bottom: 0;
+}
+.project {
+  transition: 0.5s ease;
+  box-shadow:
+    0.75px 2.5px 2px rgba(180,180,185,0.7),
+    -0.75px -0.25px 2px rgba(180,180,185,0.7);
+}
+.project:hover {
+  transition: 0.5s ease;
+  box-shadow:
+    1px 2.75px 2px rgba(140,140,150,0.7),
+    -1px -0.5px 2px rgba(140,140,150,0.7);
+}
+.project h4 {
+  margin-bottom: 0.25rem;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+}
+.project h5 {
+  font-family: 'Oswald';
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+.project img {
+  opacity: 0.5;
+  transition: 0.25s ease;
+}
+.project img:hover {
+  opacity: 1;
+  transition: 0.25s ease;
+}
+.project-intro {
+  margin-bottom: 1.5rem;
+}
+.project-intro p {
+  margin-bottom: 0.4rem;
+}
+p.identifiers {
+  margin: 0 auto;
+  text-align: center;
+}
+.project .identifier {
+  margin: 0 0.25%;
+  padding: 0 1.6% 0.6%;
+  background-color: transparent;
+  border: 1px solid rgba(25,25,25,0.6);
+  text-decoration-line: none;
+  opacity: 0.9;
+}
+.project .ic {
+  background-color: #d9534f;
+}
+.project .working {
+  background-color: #f0ad4e;
+}
+.project .done {
+  background-color: #5cb85c;
+}
+.project-details {
+  margin: 0 auto;
+}
+.project-details p {
+  font-family: 'Yantramanav', sans-serif;
+}
+.project-details img {
+  margin-bottom: 5%;
+  width: 100% !important;
+  border-radius: 7.5px;
+  box-shadow:
+    0.75px 2.5px 2px rgba(140,140,150,0.7),
+    -0.75px -0.25px 2px rgba(140,140,150,0.7);
+}
+/***********
+PORTFOLIO
+***********/
+.portfolio p {
+  padding-top: 5px;
+  text-align: center;
+}
+.portfolio img {
+  border-radius: 5px;
+}
+.portfolio .img-fluid {
+  opacity: 0.8;
+  transition-duration: 0.4s;
+}
+.portfolio .img-fluid:hover {
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+  transition-duration: 0.4s;
+}
 /***********
 CONTACT ME
 ***********/

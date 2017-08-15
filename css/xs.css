@@ -7,7 +7,10 @@
   .education,
   .skills,
   .experience,
+  .reading,
+  .portfolio,
   .contact {
+    margin: 0 auto;
     width: 100%;
   }
   .bookshelf {
@@ -163,7 +166,7 @@
     margin: 0; padding: 0;
   }
   .experience-description {
-    margin: 1.5% auto;
+    margin-top: 1.5%;
     padding: 4.5%;
     border-radius: 0;
   }
@@ -197,6 +200,47 @@
   .bookshelf img {
     width: 108px;
     height: 162px;
+  }
+  /***********
+  PROJECTS
+  ***********/
+  .projects section {
+    margin: 5% 0;
+    padding: 3%;
+    border-radius: 0;
+  }
+  .project img {
+    width: 32px;
+  }
+  .project h4 {
+    font-size: 1.25rem;
+  }
+  .portfolio a > p {
+    font-size: 20pt;
+  }
+  .tile p.identifiers {
+    line-height: 1.4rem;
+  }
+  .project .identifier {
+    border-radius: 5px;
+  }
+  .project-details {
+    width: 100%;
+  }
+  .tile .project-details p {
+    line-height: 1.1rem;
+  }
+  /***********
+  PORTFOLIO
+  ***********/
+  .portfolio {
+    padding: 0 2.5%;
+  }
+  .portfolio .col-6,
+  .portfolio .col-sm-4,
+  .portfolio .col-md-3,
+  .portfolio .col-lg-2 {
+    padding: 5px;
   }
   /***********
   CONTACT ME
