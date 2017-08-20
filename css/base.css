@@ -123,10 +123,9 @@ a.link:hover {
   color: white;
   transition: 0.4s ease;
 }
-a.transparent-link {
+.transparent-link {
   margin-top: 1.5%;
   border: none;
-  text-decoration-color: rgb(25,25,25);
 }
 ul {
   margin-bottom: 0.5rem;
@@ -134,6 +133,9 @@ ul {
 }
 img.inactive {
   opacity: 0.5;
+}
+img.inactive:hover {
+  transform: none;
 }
 /***********
 INTRO

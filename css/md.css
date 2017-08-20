@@ -46,7 +46,7 @@
     width: 95%;
   }
   .tile {
-    padding: 2.5% 4%;
+    padding: 3% 4%;
   }
   .tile p {
     font-size: 0.75rem;
@@ -200,9 +200,8 @@
   .portfolio {
     padding: 5% 10% 0;
   }
-  .portfolio .col-6,
-  .portfolio .col-sm-4,
-  .portfolio .col-md-3,
+  .portfolio .col-4,
+  .portfolio .col-sm-3,
   .portfolio .col-lg-2 {
     padding: 9px;
   }

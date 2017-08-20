@@ -153,9 +153,8 @@
   .portfolio {
     padding: 5% 10% 0;
   }
-  .portfolio .col-6,
-  .portfolio .col-sm-4,
-  .portfolio .col-md-3,
+  .portfolio .col-4,
+  .portfolio .col-sm-3,
   .portfolio .col-lg-2 {
     padding: 7px;
   }
