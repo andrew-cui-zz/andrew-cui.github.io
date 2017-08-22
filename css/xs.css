@@ -3,6 +3,13 @@
   html {
     font-size: 12pt;
   }
+  section {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+  .education {
+    padding-bottom: 4rem;
+  }
   .intro,
   .education,
   .skills,
@@ -35,8 +42,13 @@
   }
   .navbar-collapse.collapse,
   .navbar-collapse.collapsing {
+    background-color: white;
     padding-top: 0;
     padding-bottom: 0.35rem;
+  }
+  .navbar-nav,
+  .nav-item {
+    width: 45vw;
   }
   a:hover.nav-link {
     border-right: 2.5px solid black;
@@ -46,6 +58,9 @@
   ***********/
   .about {
     margin-top: 10%;
+  }
+  .about h5 {
+    line-height: 1.1rem;
   }
   .bio {
     padding: 0 12.5%;
@@ -139,9 +154,6 @@
   /***********
   SKILLS
   ***********/
-  .skills {
-    padding: 5%;
-  }
   .skills-toggler img {
     max-width: 60%;
   }
@@ -230,7 +242,8 @@
   PORTFOLIO
   ***********/
   .portfolio {
-    padding: 0 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
   .portfolio .col-4,
   .portfolio .col-sm-3,
@@ -241,7 +254,7 @@
   CONTACT ME
   ***********/
   .contact {
-    padding: 7.5% 10% 0;
+    padding: 4rem 10% 0;
   }
 
   /***********
