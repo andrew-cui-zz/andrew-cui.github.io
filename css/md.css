@@ -38,6 +38,9 @@
   /***********
   INTRO
   ***********/
+  .intro {
+    padding-top: 3rem;
+  }
   .bio {
     margin-bottom: 5%;
     padding: 0 10%

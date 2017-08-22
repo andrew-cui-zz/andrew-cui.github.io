@@ -4,14 +4,11 @@
     font-size: 12pt;
   }
   section {
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 0;
   }
   .intro {
-    padding-top: 3.5rem;
-  }
-  .education {
-    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
   .intro,
   .education,
@@ -257,7 +254,7 @@
   CONTACT ME
   ***********/
   .contact {
-    padding: 4rem 10% 0;
+    padding: 5rem 10% 0;
   }
 
   /***********

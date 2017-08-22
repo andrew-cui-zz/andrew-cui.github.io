@@ -4,10 +4,7 @@
     font-size: 13pt;
   }
   .intro {
-    padding-top: 1.75rem;
-  }
-  .education {
-    padding-bottom: 2rem;
+    padding-top: 3rem;
   }
   a.link {
     border-radius: 5px;
@@ -96,7 +93,7 @@
   SKILLS
   ***********/
   .skills {
-    padding: 4rem 12.5% 0;
+    padding: 5rem 12.5% 0;
   }
   .skills-toggler img {
     max-width: 60%;
@@ -109,7 +106,7 @@
   EXPERIENCE
   ***********/
   .experience {
-    padding: 4rem 10% 0;
+    padding: 5rem 10% 0;
   }
   .experience-description {
     margin-top: 3%;
@@ -154,7 +151,7 @@
   PORTFOLIO
   ***********/
   .portfolio {
-    padding: 4rem 10% 0;
+    padding: 5rem 10% 0;
   }
   .portfolio .col-4,
   .portfolio .col-sm-3,
@@ -166,7 +163,7 @@
   CONTACT ME
   ***********/
   .contact {
-    padding: 4rem 12.5% 0;
+    padding: 5rem 12.5% 0;
   }
   /***********
   FOOTER
