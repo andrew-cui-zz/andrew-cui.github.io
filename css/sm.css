@@ -3,6 +3,9 @@
   html {
     font-size: 13pt;
   }
+  .intro {
+    padding-top: 1.75rem;
+  }
   .education {
     padding-bottom: 2rem;
   }
