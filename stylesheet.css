@@ -139,7 +139,7 @@ li.nav-item > a:hover {
   font-style: italic;
 }
 .landing {
-  background-image: url('https://static.pexels.com/photos/547114/pexels-photo-547114.jpeg');
+  background-image: url('img/background.jpg');
   background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
