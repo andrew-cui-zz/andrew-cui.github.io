@@ -1,6 +1,6 @@
 <!--
-andrewcui.com (yiquncui.com) • v5.0
-october 2017
+andrewcui.com (yiquncui.com) • v5.1
+december 2017
 created by andrew yiqun cui
 -->
 <!DOCTYPE html>
@@ -44,53 +44,48 @@ created by andrew yiqun cui
 
   <!-- website content -->
   <body>
-    <nav class="nav-wrapper">
-      <div class="nav d-flex align-items-center" id="nav">
-        <a class="navbar-brand mr-3" id="nav-hide" onclick="hideNav()"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-        <nav class="navbar navbar-expand">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="#edu">about</a>
-            </li>
-            <li class="nav-item">
-              <a href="#proj">portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#other">other</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <nav class="nav d-flex align-items-center" id="nav">
+      <nav class="navbar">
+        <div class="navbar-logo">
+        </div>
+        <h3 class="navbar-brand">
+          <a>Andrew Cui</a>
+        </h3>
+        <ul class="navbar-nav mr-auto d-flex align-items-left">
+          <li class="nav-item">
+            <a href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">other</a>
+          </li>
+        </ul>
+      </nav>
     </nav>
 
     <!-- main body content for index.html -->
     <main>
-      <nav class="header d-flex flex-row align-items-center">
-        <a class="navbar-brand ml-4" id="nav-hide" onclick="showNav()"><i class="fa fa-circle-o-notch mr-2" aria-hidden="true"></i>Andrew Cui<i class="fa fa-angle-down ml-5" aria-hidden="true"></i></a>
-        <p class="text-right mr-4 mb-0 ml-auto">
-          M&amp;T, data analytics, and research @ Penn
-        </p>
-      </nav>
-
       <section class="landing">
         <div class="landing-caption">
           <h1 class="text-center">Hi, I'm Andrew</h1>
           <p class="text-center mt-3">
-            and this is my website.
+            (currently working on this - check back soon!)
           </p>
         </div>
         <p class="landing-attribution">
-          Image courtesy of <a href="https://www.pexels.com/photo/adventure-alps-background-beautiful-547114/" target="_blank">Ales Krivec</a>, Pexels.
+          Image courtesy of <a href="https://www.pexels.com/photo/adventure-blue-calm-waters-climb-300857/" target="_blank">Riccardo Bresciani</a>, Pexels.
         </p>
       </section>
       <div class="white"></div>
 
       <section class="edu" id="edu">
-        <h1>A bit about me</h1>
+        <h1>About me</h1>
         <br />
-        <h2>I'm a sophomore at the University of Pennsylvania's M&amp;T program,</h2>
-        <p class="text-right">studying computer science, statistics, and either finance or management</p>
-        <div class="row edu-penn">
+        <h3>I'm a sophomore at the University of Pennsylvania's M&amp;T program,
+          studying computer science, statistics, and management</h3>
+        <!-- <div class="row edu-penn">
           <div class="col-12 col-sm-12 col-md-4">
             <img class="img-fluid d-flex align-items-center" src="img/education/mt.png" />
           </div>
@@ -100,30 +95,25 @@ created by andrew yiqun cui
           <div class="col-12 col-sm-6 col-md-4">
             <img class="img-fluid d-flex align-items-center" src="img/education/wharton.jpg" />
           </div>
-        </div>
+        </div> -->
+
         <p class="mt-4">
           I'm also an alum of <a href="https://www.bcsd.org/" target="_blank">Brighton High School</a> and the <a href="https://www.esm.rochester.edu/community/programs/" target="_blank">Eastman Community Music School's</a> Music Theory program, graduated in 2016.
         </p>
       </section>
 
       <section class="exp" id="exp">
-        <h2>Last summer, I interned on the <img src="img/experience/capitalone.png" />credit line increase team, </h2>
-        <p class="text-right">
+        <h3>Last summer, I interned on the <img src="img/experience/capitalone.png" />credit line increase team, </h3>
+        <p class="text-left">
           analyzing customer credit performance and income collection stream data
-          <br />
           to determine if income collection channel can predict customer credit behavior.
         </p>
-        <h3 class="mt-5">
-          I've also gained experience in student groups at Penn:
-        </h3>
         <div class="row exp-penn pt-4">
           <div class="col-6 col-md-3">
             <img src="img/experience/sfcu.jpeg" />
             <h5><a href="https://www.upennsfcu.org/" target="_blank">Student Fed. Credit Union</a></h5>
             <p>
-              Member Services
-              <hr />
-              09.2016
+              Operations
             </p>
           </div>
           <div class="col-6 col-md-3">
@@ -131,17 +121,13 @@ created by andrew yiqun cui
             <h5><a href="http://musepenn.org/" target="_blank">MUSE Consulting</a></h5>
             <p>
               Generalist Practice
-              <hr />
-              01.2017
             </p>
           </div>
           <div class="col-6 col-md-3">
             <img src="img/experience/wdhc.png" />
             <h5>Wharton Digital Health</h5>
             <p>
-              Analytics
-              <hr />
-              09.2017
+              Analytics Consulting
             </p>
           </div>
           <div class="col-6 col-md-3">
@@ -149,8 +135,6 @@ created by andrew yiqun cui
             <h5><a href="http://www.pennwitg.com" target="_blank">WITG</a></h5>
             <p>
               Quantitative Investment Strategies
-              <hr />
-              09.2017
             </p>
           </div>
         </div>
@@ -413,7 +397,7 @@ created by andrew yiqun cui
     </script>
 
     <!-- display navigation bar -->
-    <script>
+    <!-- <script>
       function showNav() {
         document.getElementById("nav").style.top = "0";
       }
@@ -422,7 +406,7 @@ created by andrew yiqun cui
       function hideNav() {
         document.getElementById("nav").style.top = "-5rem";
       }
-    </script>
+    </script> -->
 
     <!-- expand skills section -->
     <script>
