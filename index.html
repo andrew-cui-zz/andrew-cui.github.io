@@ -1,5 +1,5 @@
 <!--
-andrewcui.com (yiquncui.com) • v5.1
+andrewcui.com (yiquncui.com) • v6.0
 december 2017
 created by andrew yiqun cui
 -->
@@ -12,377 +12,415 @@ created by andrew yiqun cui
     <title>Andrew Cui</title>
     <meta name="title" content="Andrew Cui"/>
     <meta name="author" content="Andrew Cui">
-    <meta name="description" content="Engineering/business student at the University of Pennsylvania."/>
+    <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- open graph -->
     <meta property="og:title" content="Andrew Cui" />
     <meta property="og:url" content="http://www.andrewcui.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Engineering/business student at the University of Pennsylvania." />
-    <meta property="og:image" content="http://www.andrewcui.com/img/projects/website.png" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Andrew Cui" />
-    <meta name="twitter:description" content="Engineering/business student at the University of Pennsylvania." />
+    <meta name="twitter:description" content="" />
     <meta name="twitter:url" content="http://www.andrewcui.com" />
-    <meta name="twitter:image" content="http://www.andrewcui.com/img/projects/website.png" />
+    <meta name="twitter:image" content="" />
 
     <!-- bootstrap 4.0 beta -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- style packages -->
-    <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500|Raleway:300,400|Libre+Franklin:300i,300,400" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/logo/icon.png"/>
-
-    <script src="https://use.fontawesome.com/5513c3aae6.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500|Raleway:300,400|Libre+Franklin:300,400" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/root/icon.png"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
     <!-- CSS (ministyle: no-space CSS)-->
-    <link rel="stylesheet" type="text/css" href="ministyle.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
   </head>
 
   <!-- website content -->
   <body>
-    <nav class="nav d-flex align-items-center" id="nav">
-      <nav class="navbar">
-        <div class="navbar-logo">
-        </div>
-        <h3 class="navbar-brand">
-          <a>Andrew Cui</a>
-        </h3>
-        <ul class="navbar-nav mr-auto d-flex align-items-left">
-          <li class="nav-item">
-            <a href="#">about</a>
+    <div id="wrapper">
+      <!-- side navigation: adapted from @BlackrockDigital -->
+      <nav class="sidebar">
+        <ul class="sidebar-nav" id="sidebar">
+          <li class="navbar-brand">
+            <img src="img/root/signature.jpeg"/>
+            <p class="text-center">
+              andrew cui
+            </p>
           </li>
-          <li class="nav-item">
-            <a href="#">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">other</a>
-          </li>
+          <li><a class="active" href="#intro">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
-      </nav>
-    </nav>
-
-    <!-- main body content for index.html -->
-    <main>
-      <section class="landing">
-        <div class="landing-caption">
-          <h1 class="text-center">Hi, I'm Andrew</h1>
-          <p class="text-center mt-3">
-            (currently working on this - check back soon!)
+        <div class="contact-link">
+          <p class="d-flex justify-content-between">
+            <a href="http://www.linkedin.com/in/andrew-cui/" target="_blank"><i class="fab fa-linkedin icon" aria-hidden="true"></i></a>
+            <a href="http://github.com/andrew-cui" target="_blank"><i class="fab fa-github icon" aria-hidden="true"></i></a>
+            <a href="https://medium.com/@andrew.yiqun.cui" target="_blank"><i class="fab fa-medium icon" aria-hidden="true"></i></a>
+            <a href="http://www.instagram.com/cui._.sine/" target="_blank"><i class="fab fa-instagram icon" aria-hidden="true"></i></a>
+            <a href="http://www.quora.com/profile/Andrew-Cui-2" target="_blank"><i class="fab fa-quora icon" aria-hidden="true"></i></a>
           </p>
         </div>
-        <p class="landing-attribution">
-          Image courtesy of <a href="https://www.pexels.com/photo/adventure-blue-calm-waters-climb-300857/" target="_blank">Riccardo Bresciani</a>, Pexels.
-        </p>
-      </section>
-      <div class="white"></div>
-
-      <section class="edu" id="edu">
-        <h1>About me</h1>
-        <br />
-        <h3>I'm a sophomore at the University of Pennsylvania's M&amp;T program,
-          studying computer science, statistics, and management</h3>
-        <!-- <div class="row edu-penn">
-          <div class="col-12 col-sm-12 col-md-4">
-            <img class="img-fluid d-flex align-items-center" src="img/education/mt.png" />
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <img class="img-fluid d-flex align-items-center" src="img/education/seas.jpg" />
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <img class="img-fluid d-flex align-items-center" src="img/education/wharton.jpg" />
-          </div>
-        </div> -->
-
-        <p class="mt-4">
-          I'm also an alum of <a href="https://www.bcsd.org/" target="_blank">Brighton High School</a> and the <a href="https://www.esm.rochester.edu/community/programs/" target="_blank">Eastman Community Music School's</a> Music Theory program, graduated in 2016.
-        </p>
-      </section>
-
-      <section class="exp" id="exp">
-        <h3>Last summer, I interned on the <img src="img/experience/capitalone.png" />credit line increase team, </h3>
-        <p class="text-left">
-          analyzing customer credit performance and income collection stream data
-          to determine if income collection channel can predict customer credit behavior.
-        </p>
-        <div class="row exp-penn pt-4">
-          <div class="col-6 col-md-3">
-            <img src="img/experience/sfcu.jpeg" />
-            <h5><a href="https://www.upennsfcu.org/" target="_blank">Student Fed. Credit Union</a></h5>
-            <p>
-              Operations
-            </p>
-          </div>
-          <div class="col-6 col-md-3">
-            <img src="img/experience/muse.png" />
-            <h5><a href="http://musepenn.org/" target="_blank">MUSE Consulting</a></h5>
-            <p>
-              Generalist Practice
-            </p>
-          </div>
-          <div class="col-6 col-md-3">
-            <img src="img/experience/wdhc.png" />
-            <h5>Wharton Digital Health</h5>
-            <p>
-              Analytics Consulting
-            </p>
-          </div>
-          <div class="col-6 col-md-3">
-            <img src="img/experience/witg.png" />
-            <h5><a href="http://www.pennwitg.com" target="_blank">WITG</a></h5>
-            <p>
-              Quantitative Investment Strategies
-            </p>
-          </div>
-        </div>
-        <p class="text-center my-2">
-          <a href="files/resume.pdf">
-            <i class="fa fa-id-card-o mr-1" aria-hidden="true"></i>
-            my resume
-          </a>
-        </p>
-      </section>
-
-      <section class="proj" id="proj">
-        <h1>my personal projects</h1>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="proj-entry">
-              <img src="img/projects/website.png" />
-              <h4>This website!</h4>
-              <p>
-                <a href="http://www.andrewcui.com" target="_blank"><i>andrewcui.com</i></a>
-                <hr />
-              </p>
-              <p class="proj-desc">
-                December 2016 &#8212; present
-              </p>
-              <p class="proj-desc text-left">
-                I've used this website project to learn HTML and CSS front-end development, work with GitHub, and sharpen my design skills. This is the fifth redesign, and I've focused on a more modern visual theme, better styled HTML, and more efficient CSS.
-                <br /><br />
-                The source code is <a href="https://github.com/andrew-cui/andrew-cui.github.io" target="_blank">here</a>.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="proj-entry">
-              <img src="img/projects/wuft-io.png" />
-              <h4>Wharton FinTech website</h4>
-              <p>
-                <a href="http://www.wuft.io/" target="_blank"><i>wuft.io</i></a>
-                <hr />
-              </p>
-              <p class="proj-desc">
-                August 2017
-              </p>
-              <p class="proj-desc text-left">
-                I created maintain the website for the Wharton Undergraduate FinTech Group (WUFT).
-                <br /><br />
-                WUFT aims to introduce Penn students to the intersection of finance and technology. Check us out on <a href="https://www.facebook.com/WUFTgroup/" target="_blank">Facebook</a>!
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="proj-entry">
-              <img src="img/projects/cis120/game_active.png" />
-              <h4>Brickbreaker</h4>
-              <p>
-                <a href="https://github.com/andrew-cui/cis120-finalproject" target="_blank">GitHub repo.</a>
-                <hr />
-              </p>
-              <p class="proj-desc">
-                December 2016
-              </p>
-              <p class="proj-desc text-left">
-                Replicated the Brickbreaker game for my <a href="http://www.seas.upenn.edu/~cis120/current/" target="_blank">CIS 120</a> final project, using Java's Swing GUI/game library.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="skills" id="skills">
-          <h2>what I know how to do</h2>
+      </nav>
+      <div class="toggler"><a href="#menu-toggle" id="menu-toggle">
+        <i class="fas fa-angle-double-left" id="toggle-l"></i>
+        <i class="fas fa-angle-double-right" id="toggle-r"></i>
+      </a></div>
+      <main>
+        <!-- intro -->
+        <section id="intro">
           <div class="row">
-            <div class="skills-section d-flex flex-wrap">
-              <h3 class="mr-5"><a data-toggle="toggle" data-target="#analytics">analytics
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a></h3>
-              <div><div class="skills-entry d-flex" id="analytics" role="tabpanel">
-                <p>SQL</p>
-                <p>Python</p>
-                <p>R</p>
-              </div></div>
+            <div class="col-12 col-sm-8 col-md-9">
+              <h1>
+                Andrew Cui
+              </h1>
+              <p class="subhead">
+                Hi! I'm a sophomore at the University of Pennsylvania's <code>Management and Technology Program</code>
+                studying <code>Computer Science</code>, <code>Statistics</code>, and <code>Management</code>.
+              </p>
+              <p class="subhead">
+                Feel free to reach out - shoot me an email
+                <code class="ns"><a class="btn btn-primary" href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank">here</a></code>!
+              </p>
             </div>
-            <div class="skills-section d-flex flex-wrap">
-              <h3 class="mr-5"><a data-toggle="toggle" data-target="#cs">programming
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a></h3>
-              <div><div class="skills-entry d-flex" id="cs" role="tabpanel">
-                <p>Java</p>
-                <p>HTML/CSS</p>
-                <p>OCaml</p>
-              </div></div>
-            </div>
-            <div class="skills-section d-flex flex-wrap">
-              <h3 class="mr-5"><a data-toggle="toggle" data-target="#software">software
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a></h3>
-              <div><div class="skills-entry d-flex" id="software" role="tabpanel">
-                <p>PowerPoint</p>
-                <p>InDesign</p>
-              </div></div>
-            </div>
+            <div class="col-4 col-md-3">
+              <img class="rounded-circle" id="profile-photo" src="img/root/profile.jpg" />
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="photo" id="photo">
-        <h1 class="text-center">photography portfolio</h1>
-        <p class="text-center">
-          (for fun, especially of food)
-        </p>
-        <div class="row photo-wrapper">
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/disney-castle.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/disney-epcot-fireworks.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/washington-monument-fireworks.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/schuylkill.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/lake-george.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/montreal-cathedral.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/adirondacks.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/bubble.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/chelsea-market-tacos.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/truffles.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/ribs.jpg"/>
-          </div>
-          <div class="col-4 col-sm-3 col-lg-2">
-            <img class="img-fluid" src="img/portfolio/burgers.jpg"/>
-          </div>
-        </div>
-      </section>
-      <section class="other" id="other">
-        <h1 class="text-right mb-5">and some personal favorites</h1>
-        <div class="row">
-          <div class="col-12 col-md-5">
-            <h3><a data-toggle="collapse" href="#books" aria-expanded="true">
-              <i class="fa fa-book" aria-hidden="true"></i>
-              books
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a></h3>
-            <br />
-            <div class="collapse books" id="books" role="tabpanel">
-              <p>Give and Take</p>
-              <p>Algorithms to Live By</p>
-              <p>The Last Lecture</p>
-              <p>Outliers</p>
+        </section>
+        <!-- about -->
+        <section id="about">
+          <hr />
+          <h2>about</h2>
+          <div id="entry-wrapper">
+            <!-- penn -->
+            <div class="entry d-flex align-items-center" id="penn">
+              <div class="entry-photo">
+                <img src="img/about/mt.png" />
+              </div>
+              <div class="entry-content">
+                <h5>University of Pennsylvania</h5>
+                <h6 class="text-muted">Jerome Fisher Program in Management &amp; Technology</h6>
+                <p class="mb-0">
+                  B.S. Computer Science
+                </p>
+                <p>
+                  B.S. Economics (Statistics, Management)
+                </p>
+              </div>
             </div>
-            <hr />
-            <h3><a data-toggle="collapse" href="#movies" aria-expanded="false">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              movies &amp; tv
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a></h3>
-            <br />
-            <div class="collapse movies" id="movies" role="tabpanel">
-              <p>The Pursuit of Happyness</p>
-              <p>White Collar</p>
-              <p>Sherlock</p>
+            <hr width="25%" />
+            <!-- optiver -->
+            <div class="entry d-flex align-items-center" id="optiver">
+              <div class="entry-photo">
+                <img src="img/about/optiver.png" />
+              </div>
+              <div class="entry-content">
+                <h5><code>Optiver</code></h5>
+                <p>
+                  This year, I'll be working as a trading intern in Chicago.
+                </p>
+              </div>
             </div>
-            <hr />
-            <h3><a data-toggle="collapse" href="#music" aria-expanded="true">
-              <i class="fa fa-music" aria-hidden="true"></i>
-              music
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a></h3>
-            <br />
-            <div class="collapse show music" id="music" role="tabpanel">
-              <iframe src="https://open.spotify.com/embed?uri=spotify:user:andrew.cui:playlist:1ftt3HXoRtg5qHJblWF9AA&theme=white" frameborder="0" allowtransparency="true" style="width: 100%;"></iframe>
+            <!-- capital one -->
+            <div class="entry d-flex align-items-center" id="capitalone">
+              <div class="entry-photo">
+                <img src="img/about/capitalone-circle.png" />
+              </div>
+              <div class="entry-content">
+                <h5><code>Capital One</code></h5>
+                <p>
+                  Worked on credit line analytics as a business analyst intern.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-7 quotes" id="quotes">
-            <h3>quote board</h3>
-            <p>
-              sources of motivation, or things I found funny
-            </p>
-            <div class="quote">
-              <p>
-                "The people who are crazy enough to think that they can change the world are the ones who actually do."
-              </p>
-              <p>
-                &#8212;<i>Steve Jobs</i>
-              </p>
+            <hr width="25%" />
+            <!-- muse -->
+            <div class="entry d-flex align-items-center" id="muse">
+              <div class="entry-photo">
+                <img src="img/about/muse.png" />
+              </div>
+              <div class="entry-content">
+                <h5><code>MUSE Consulting</code></h5>
+                <p>
+                  Consulted for clients including a Fortune 500 retailer and Fortune 100 pharmaceutical company.
+                </p>
+              </div>
             </div>
-            <div class="quote">
-              <p>
-                "Work hard in silence, and let your success be your noise."
-              </p>
-              <p>
-                &#8212;<i>Frank Ocean</i>
-              </p>
+            <!-- witg -->
+            <div class="entry d-flex align-items-center" id="wdhc">
+              <div class="entry-photo">
+                <img src="img/about/wdhc-w.png" />
+              </div>
+              <div class="entry-content">
+                <h5><code>Wharton Digital Health</code></h5>
+                <p>
+                  Analytics-centric consulting for healthcare clients.
+                </p>
+              </div>
             </div>
-            <div class="quote">
-              <p>
-                "There are a lot of little reasons why the big things in our lives happen."
-              </p>
-              <p>
-                &#8212;<i>Ted Mosby</i>
-              </p>
+            <!-- wdhc -->
+            <div class="entry d-flex align-items-center" id="witg">
+              <div class="entry-photo">
+                <img src="img/about/witg.jpg" />
+              </div>
+              <div class="entry-content">
+                <h5><code>Wharton Investment &amp; Trading Group</code></h5>
+                <p>
+                  Quantitative Investment Strategies team.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+          <p class="mt-3 mb-0 text-center">
+            <code class="ns"><a class="btn btn-primary" href="files/resume.pdf" target="_blank">view my resume</a></code>
+          </p>
+        </section>
+        <!-- portfolio -->
+        <section id="portfolio">
+          <hr />
+          <h2>projects &amp; portfolio</h2>
+          <p class="subhead">
+            photography &nbsp; • &nbsp; web &nbsp; • &nbsp; code &nbsp; • &nbsp; graphic design
+          </p>
+          <div class="card">
+            <!-- nav -->
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#photography"><code>photography</code></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#web"><code>web</code></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#design"><code>design</code></a>
+                </li>
+              </ul>
+            </div>
+            <!-- tabs -->
+            <div class="tab-content">
+              <!-- photography -->
+              <div class="tab-pane fade show active" id="photography">
+                <div class="card-body">
+                  <!-- general -->
+                  <h4 class="card-title">Photography</h4>
+                  <h6 class="card-subtitle text-muted">Nikon D3200 • iPhone 6S • iPhone 8</h6>
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/montreal-cathedral.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/capitol-hill.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/washington-monument-fireworks.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/disney-epcot-fireworks.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/disney-castle.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/schuylkill.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/adirondacks.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/bubble.jpg" />
+                    </div>
+                  </div>
+                  <hr class="my-4"/>
+                  <!-- food -->
+                  <h4 class="card-title">Food photography</h4>
+                  <h6 class="card-subtitle text-muted">Nikon D3200</h6>
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/chelsea-market-tacos.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/chelsea-market-japanese.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/ippudo.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/ribs.jpg" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/burgers.png" />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 photo">
+                      <img src="img/portfolio/photo/truffles.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- web design -->
+              <div class="tab-pane fade" id="web">
+                <div class="card-body row">
+                  <!-- muse consulting website -->
+                  <div class="col-12 col-lg-6" id="musesite">
+                    <div class="d-flex align-items-center">
+                      <img class="card-img-top img-fluid" src="img/portfolio/web/musepenn.png" alt="MUSE Consulting @ The Wharton School">
+                    </div>
+                    <h4 class="card-title">MUSE Consulting Website</h4>
+                    <h6 class="card-subtitle text-muted">Squarespace</h6>
+                    <p>
+                      Redesigned the website for the MUSE Consulting club at Wharton and built in Squarespace.
+                      Included new layout and sections for structure, client testimonials, and member experiences.
+                      Done in collaboration with
+                      <code class="ns"><a class="btn btn-primary" href="http://www.cameroncabo.com/"><i class="fas fa-user"></i> Cameron Cabo</a></code>
+                      and
+                      <code class="ns"><a class="btn btn-primary disabled" href="#"><i class="fas fa-user"></i> Zack Varrato</a></code>.
+                    </p>
+                    <code class="ns"><a href="http://musepenn.org/consulting/" class="btn btn-primary">
+                      <i class="fab fa-chrome"></i>
+                      MUSE
+                    </a></code>
+                    <code class="ns"><a href="http://www.squarespace.com" class="btn btn-secondary">
+                      <i class="fas fa-wrench"></i>
+                      Squarespace
+                    </a></code>
+                    <hr class="project-divider"/>
+                  </div>
+                  <!-- personal website -->
+                  <div class="col-12 col-lg-6" id="website">
+                    <div class="d-flex align-items-center">
+                      <img class="card-img-top img-fluid" src="img/portfolio/web/website.png" alt="andrewcui.com">
+                    </div>
+                    <h4 class="card-title">andrewcui.com</h4>
+                    <h6 class="card-subtitle text-muted">HTML, CSS, Bootstrap</h6>
+                    <p>
+                      Built as a side project to self-learn basic HTML and CSS.
+                      Initially completed in May 2017, redesigned in August, October, December 2017.
+                      Hosted on GitHub pages and Google Domains, with Google Analytics enabled.
+                    </p>
+                    <code class="ns"><a href="#" class="btn btn-primary">
+                      <i class="fab fa-chrome"></i>
+                      this site
+                    </a></code>
+                    <code class="ns"><a href="https://github.com/andrew-cui/andrew-cui.github.io" class="btn btn-secondary">
+                      <i class="fab fa-github"></i>
+                      GitHub
+                    </a></code>
+                  </div>
+                </div>
+              </div>
+              <!-- graphic design -->
+              <div class="tab-pane fade" id="design">
+                <div class="card-body row" id="wufc">
+                  <!-- wharton finance club -->
+                  <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <img class="card-img-top img-fluid" id="wufc-ocr" src="img/portfolio/design/wufc-ocr.png" alt="Wharton Finance Club: 10 Steps to OCR">
+                      <img class="card-img-top img-fluid" id="wufc-banner" src="img/portfolio/design/wufc-banner.png" alt="Wharton Finance Club: New club banner">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img class="card-img-top img-fluid" id="wufc-logo" src="img/portfolio/design/wufc-logo.png" alt="Wharton Finance Club: Updated logo">
+                    </div>
+                    <h4 class="card-title">Wharton Finance Club Marketing</h4>
+                    <h6 class="card-subtitle text-muted">Adobe Creative Suite</h6>
+                    <p>
+                      Designed cover photos for events such as workshops, competitions, and social events; created mockups for redesigns of previous photos.
+                    </p>
+                    <hr class="wufc-hr"/>
+                    <p>
+                      Recolored and improved resolution of the existing Wharton Finance Club "red bull" logo using Adobe Illustrator and Photoshop.
+                    </p>
+                    <hr class="wufc-hr"/>
+                    <p>
+                      Designed the 6' x 3' banner that is currently used at club recruitment fairs and club events using InDesign and Photoshop.
+                    </p>
+                    <code class="ns"><a href="https://www.whartonfinanceclub.com" class="btn btn-primary">
+                      <i class="fab fa-chrome"></i>
+                      Wharton Ugr. Finance Club
+                    </a></code>
+                    <code class="ns"><a href="https://github.com/andrew-cui/andrew-cui.github.io/img/portfolio/design" class="btn btn-secondary">
+                      <i class="fab fa-chrome"></i>
+                      full resolution files
+                    </a></code>
+                  </div>
+                </div>
+              </div>
 
-      <section class="contact">
-        <h1 class="text-center">Get in touch!</h1>
-        <p class="contact-description my-4">
-          Let's talk! Either shoot me an <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fa fa-envelope-o px-1 pt-2" aria-hidden="true"></i></a> or connect with me online &#8212; I'm usually pretty good about responding within a couple days and always happy to meet new people and chat!
-        </p>
-        <h2 class="d-flex justify-content-center contact-link">
-          <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-          <a href="http://www.linkedin.com/in/andrew-cui/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="http://github.com/andrew-cui" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="http://www.instagram.com/cui._.sine/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="http://www.quora.com/profile/Andrew-Cui-2" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a>
-        </h2>
-      </section>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+          <hr />
+          <h2>contact</h2>
+          <p class="my-4">
+            Get in touch! Shoot me an email or connect with me online &#8212;
+            I'm usually pretty good about responding within a couple days and happy to talk (and help if I can)!
+          </p>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-left">Andrew Cui</h4>
+              <h6 class="text-muted">University of Pennsylvania</h6>
+              <p class="card-text text-muted">Management &amp; Technoloy • Class of 2020</p>
+              <code class="ns"><a class="btn btn-primary" href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank">
+                email
+                <i class="fas fa-play icon-send"></i>
+              </a></code>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary credit" data-toggle="modal" data-target="#credit">
+            special thanks to
+          </button>
 
-      <!-- footer -->
-      <footer class="px-3">
-        <p class="p-2 pb-0">
-          &copy; ANDREW YIQUN CUI &nbsp; • &nbsp; 2017
-        </p>
-      </footer>
-    </main>
+          <div class="modal fade" id="credit" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">special thanks to</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h6>Blackrock Digital</h6>
+                  <p class="card-text text-muted d-inline mr-2">Side navigation bar template</p>
+                  <code class="ns"><a class="btn btn-secondary" href="https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/css/simple-sidebar.css#L14" target="_blank">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a></code>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer class="px-2">
+          <p class="px-2 d-flex justify-content-between">
+            <span>Made with <i class="fas fa-heartbeat"></i> in
+              <i class="fas fa-map-marker-alt"></i> Philadelphia, NYC &amp; Rochester</span>
+            <span>&copy; Andrew Cui &nbsp; • &nbsp; 2018</span>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 
   <!-- javascript initialization -->
-    <!-- bootstrap 4.0 beta -->
+    <!-- bootstrap, jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <!-- google analytics -->
     <script>
@@ -396,23 +434,22 @@ created by andrew yiqun cui
       ga("send", "pageview");
     </script>
 
-    <!-- display navigation bar -->
-    <!-- <script>
-      function showNav() {
-        document.getElementById("nav").style.top = "0";
-      }
-    </script>
     <script>
-      function hideNav() {
-        document.getElementById("nav").style.top = "-5rem";
+    // open sidebar on default for large windows
+    $(document).ready(function(e) {
+      if ($(window).width() >= 768) {
+        $("#wrapper").toggleClass("toggled");
       }
-    </script> -->
-
-    <!-- expand skills section -->
-    <script>
-      $("[data-toggle='toggle']").click(function() {
-        var item = $(this).data("target");
-        $(item).toggleClass("open");
-      });
+    });
+    // open sidebar when clicked, forcing off page if small
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    // toggler script
+    $("[data-toggle='toggle']").click(function() {
+      var item = $(this).data("target");
+      $(item).toggleClass("open");
+    });
     </script>
 </html>
