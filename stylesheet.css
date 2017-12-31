@@ -286,8 +286,7 @@ li.navbar-brand:hover {
 }
 .active-toggle {
   display: block;
-  margin-left: 2px;
-  margin-right: 4px;
+  margin: 0 4px;
   margin-top: 5.125rem;
   width: 16px;
   height: auto;

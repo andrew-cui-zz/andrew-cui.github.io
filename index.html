@@ -68,8 +68,8 @@ created by andrew yiqun cui
         </div>
       </nav>
       <div class="toggler"><a href="#menu-toggle" id="menu-toggle">
-        <i class="fas fa-angle-double-left toggle-icon active-toggle"></i>
-        <i class="fas fa-angle-double-right toggle-icon"></i>
+        <div class="toggle-icon active-toggle"><i class="fas fa-angle-double-right"></i></div>
+        <div class="toggle-icon"><i class="fas fa-angle-double-left"></i></div>
       </a></div>
       <main>
         <!-- intro -->
@@ -438,6 +438,7 @@ created by andrew yiqun cui
     // open sidebar on default for large windows
     $(document).ready(function(e) {
       if ($(window).width() >= 992) {
+        $(".toggle-icon").toggleClass("active-toggle");
         $("#wrapper").toggleClass("toggled");
       }
     });
