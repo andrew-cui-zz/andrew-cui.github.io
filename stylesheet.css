@@ -16,10 +16,10 @@ body {
    font-size: 16px;
    width: 100%;
 }
-html,
+/* html,
 main {
   height: 100%;
-}
+} */
 html,
 body,
 main {
@@ -671,7 +671,10 @@ a:hover .icon-send {
 }
 #credit .btn {
   padding: .15rem .5rem 0.05rem;
-  font-size: .8rem;
+  font-size: .7rem;
+}
+#credit span {
+  font-size: .65rem;
 }
 /***********
 FOOTER
