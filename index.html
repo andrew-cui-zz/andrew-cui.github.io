@@ -68,8 +68,8 @@ created by andrew yiqun cui
         </div>
       </nav>
       <div class="toggler"><a href="#menu-toggle" id="menu-toggle">
-        <i class="fas fa-angle-double-left" id="toggle-l"></i>
-        <i class="fas fa-angle-double-right" id="toggle-r"></i>
+        <i class="fas fa-angle-double-left toggle-icon active-toggle"></i>
+        <i class="fas fa-angle-double-right toggle-icon"></i>
       </a></div>
       <main>
         <!-- intro -->
@@ -445,6 +445,7 @@ created by andrew yiqun cui
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $(".toggle-icon").toggleClass("active-toggle");
     });
     // toggler script
     $("[data-toggle='toggle']").click(function() {

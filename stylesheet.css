@@ -7,6 +7,7 @@ FRAMEWORK
       -ms-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
           transition: all 0.5s ease;
+  -webkit-overflow-scrolling: touch;
 }
 html,
 body {
@@ -27,7 +28,6 @@ main {
   color: #141414;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 body,
 section,
@@ -38,15 +38,15 @@ section {
 }
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   html { font-size: 14px; }
-  section { padding: .75rem 3rem; }
+  section { padding: .75rem 2.25rem; }
 }
 @media only screen and (min-width: 768px) {
   html { font-size: 16px; }
-  section { padding: 1rem 3.5rem; }
+  section { padding: 1rem 3rem; }
 }
 @media only screen and (min-width: 992px) {
   html { font-size: 17px; }
-  section { padding: 1.25rem 4.25rem; }
+  section { padding: 1.25rem 4rem; }
 }
 @media only screen and (min-width: 1200px) {
   html { font-size: 18px; }
@@ -194,7 +194,6 @@ https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/cs
 }
 #wrapper.toggled {
   padding-left: 240px;
-  /* height: 100vh; */
   overflow-y: scroll;
 }
 #wrapper.toggled .sidebar {
@@ -282,20 +281,16 @@ li.navbar-brand:hover {
   color: #2f7baa;
   opacity: 1;
 }
-#toggle-l {
+.toggle-icon {
   display: none;
 }
-#toggle-r,
-#wrapper.toggled #toggle-l {
+.active-toggle {
   display: block;
   margin-left: 2px;
   margin-right: 4px;
   margin-top: 5.125rem;
   width: 16px;
   height: auto;
-}
-#wrapper.toggled #toggle-r {
-  display: none;
 }
 main {
   position: relative;
@@ -481,6 +476,9 @@ PORTFOLIO
 .card-header-tabs .active {
   border-bottom: 2px solid white;
 }
+a.nav-link code {
+  background: none;
+}
 .card-body {
   padding: 2rem;
 }
@@ -500,6 +498,7 @@ PORTFOLIO
   margin-bottom: 1rem;
 }
 .card-img-top {
+  object-fit: cover;
   margin-bottom: 1rem;
   padding: 0;
   border-radius: 5px;
