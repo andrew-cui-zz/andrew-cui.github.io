@@ -248,7 +248,7 @@ section {
 .work-entry {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  background-image: linear-gradient(to right, #828282 10%, transparent 0%);
+  background-image: linear-gradient(to right, #575757 10%, transparent 0%);
   background-position: bottom;
   background-size: 12px 2px;
   background-repeat: repeat-x;
@@ -324,7 +324,7 @@ footer {
 }
 .footer-dots {
   margin-top: 1rem;
-  background-image: linear-gradient(to right, #828282 10%, transparent 0%);
+  background-image: linear-gradient(to right, #575757 10%, transparent 0%);
   padding: 12px 0;
   background-position: top;
   background-size: 12px 2px;
@@ -340,7 +340,7 @@ footer p {
   font-size: 20px;
 }
 p#copyright {
-  color: #828282;
+  color: #575757;
   font-family: 'Raleway', sans-serif;
 }
 #contact a,
