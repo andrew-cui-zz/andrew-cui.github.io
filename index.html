@@ -1,7 +1,6 @@
 <!--
-andrewcui.com (yiquncui.com) • v6.0
-december 2017
-created by andrew yiqun cui
+AndrewCui.com • v7.0
+2018
 -->
 <!DOCTYPE html>
 <html lang="en-US">
@@ -15,25 +14,11 @@ created by andrew yiqun cui
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- open graph -->
-    <meta property="og:title" content="Andrew Cui" />
-    <meta property="og:url" content="http://www.andrewcui.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Andrew Cui" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:url" content="http://www.andrewcui.com" />
-    <meta name="twitter:image" content="" />
-
-    <!-- bootstrap 4.0 beta -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- bootstrap 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- style packages -->
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400|Raleway:300|Libre+Franklin:300,500" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/root/icon.png"/>
+    <link rel="icon" type="image/png" href="img/site/icon.png"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
     <!-- CSS (ministyle: no-space CSS)-->
@@ -42,416 +27,480 @@ created by andrew yiqun cui
 
   <!-- website content -->
   <body>
-    <div id="wrapper">
-      <!-- side navigation: adapted from @BlackrockDigital -->
-      <nav class="sidebar">
-        <ul class="sidebar-nav" id="sidebar">
-          <li class="navbar-brand">
-            <img src="img/root/signature.jpeg"/>
-            <p class="text-center">
-              andrew cui
-            </p>
+    <div id="colorbar"></div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+      <a class="navbar-brand ml-3" href="#">andrew cui</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="#intro">Home</a>
           </li>
-          <li><a class="active" href="#intro">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#">contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Creative</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact</a>
+          </li>
         </ul>
-        <div class="contact-link">
-          <p class="d-flex justify-content-between">
-            <a href="http://www.linkedin.com/in/andrew-cui/" target="_blank"><i class="fab fa-linkedin icon" aria-hidden="true"></i></a>
-            <a href="http://github.com/andrew-cui" target="_blank"><i class="fab fa-github icon" aria-hidden="true"></i></a>
-            <a href="https://medium.com/@andrew.yiqun.cui" target="_blank"><i class="fab fa-medium icon" aria-hidden="true"></i></a>
-            <a href="http://www.instagram.com/cui._.sine/" target="_blank"><i class="fab fa-instagram icon" aria-hidden="true"></i></a>
-            <a href="http://www.quora.com/profile/Andrew-Cui-2" target="_blank"><i class="fab fa-quora icon" aria-hidden="true"></i></a>
-          </p>
+        <ul class="navbar-nav d-none d-md-flex ml-auto mr-3">
+          <li class="nav-item nav-icon">
+            <a href="http://www.linkedin.com/in/andrew-cui/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+          </li>
+          <li class="nav-item nav-icon">
+            <a href="http://github.com/andrew-cui" target="_blank"><i class="fab fa-github icon"></i></a>
+          </li>
+          <li class="nav-item nav-icon">
+            <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fas fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="section-img" id="head">
+        <div class="container pt-5">
+          <div class="overlay d-flex flex-column">
+            <div class="overlay-content text-center">
+              <h1 class="mt-5 mb-3">Andrew Cui</h1>
+              <h5>Engineering and business student at Penn</h5>
+            </div>
+            <div class="overlay-nav m-auto md-flex flex-row flex-wrap">
+              <a href="#intro"><button class="btn m-2">about</button></a>
+              <a href="#work"><button class="btn m-2">experience</button></a>
+              <a href="#creative"><button class="btn m-2">portfolio</button></a>
+            </div>
+          </div>
         </div>
-      </nav>
-      <div class="toggler"><a href="#menu-toggle" id="menu-toggle">
-        <div class="toggle-icon active-toggle"><i class="fas fa-angle-double-right"></i></div>
-        <div class="toggle-icon"><i class="fas fa-angle-double-left"></i></div>
-      </a></div>
-      <main>
-        <!-- intro -->
-        <section id="intro">
+      </section>
+      <section class="section-text" id="intro">
+        <div class="container">
+          <h2>Hi, I'm Andrew.</h2>
+          <p>Welcome to my website! I'm a current sophomore at the University of Pennsylvania's Management and Technology (M&amp;T) program from upstate New York, interested in a blend of data and business strategy. At school, I'm primarily involved in MUSE and APAHW (below) currently, but have gotten <a href="#work">professional exposure</a> while trying new things (such as acting in our CSA cultural show). In my free time, I enjoy photography, distance running, poker, design, and cooking/exploring the Philly food scene.</p>
           <div class="row">
-            <div class="col-12 col-sm-8 col-md-9">
-              <h1>
-                Andrew Cui
-              </h1>
-              <p class="subhead">
-                Hi! I'm a sophomore at the University of Pennsylvania's <code>Management and Technology Program</code>
-                studying <code>Computer Science</code>, <code>Statistics</code>, and <code>Management</code>.
+            <div class="col-12 col-sm-6 col-md-4 intro-col">
+              <div class="img-wrapper d-flex align-items-center justify-content-center">
+                <img class="img-fluid p-3" src="img/logo/penn.png"/>
+              </div>
+              <h4 class="text-center">M&T Program</h4>
+              <hr width="40%" />
+              <p class="mb-4">
+                Statistics, Operations, and CS student. Joint Bachelor's Degrees (Wharton, Engineering), minor (potentially 4.5-year MSE) in Data Science.
               </p>
-              <p class="subhead">
-                Feel free to reach out - shoot me an email
-                <code class="ns"><a class="btn btn-primary" href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank">here</a></code>!
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn intro-btn" data-toggle="modal" data-target="#courses">
+                  courses
+                </button>
+                <div class="modal fade" id="courses" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Relevant coursework</h4>
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Wharton</h5>
+                        <ul>
+                          <li>MKTG/STAT 476: Applied Probability Models in Marketing</li>
+                          <li>MGMT 237: Management of Technology seminar</li>
+                          <li>STAT 431: Statistical Inference</li>
+                          <li>STAT 430: Probability Theory</li>
+                        </ul>
+                        <hr />
+                        <h5>Engineering</h5>
+                        <ul>
+                          <li>CIS 545: Big Data Analytics</li>
+                          <li>CIS 121: Data Structures/Algorithms</li>
+                          <li>MATH 240: Linear Algebra</li>
+                        </ul>
+                        <hr />
+                        <h5>College</h5>
+                        <ul>
+                          <li>PSCI 151: International Security</li>
+                          <li>COMM 203: Chinese Media/Culture</li>
+                          <li>WRIT 073: Writing Seminar in Philosophy (Antinatalism)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 intro-col">
+              <div class="img-wrapper d-flex align-items-center justify-content-center">
+                <img class="img-fluid" src="http://musepenn.org/wp-content/uploads/2016/04/xSketch-5.png.pagespeed.ic.H313yY7zGY.png"/>
+              </div>
+              <h4 class="text-center">MUSE Consulting</h4>
+              <hr width="40%" />
+              <p class="mb-4">
+                Project Leader at MUSE Consulting, Wharton's only revenue-generating undergraduate consulting group. Division of the AMA-Platinum MUSE Marketing club. Clients include a Fortune 100 pharmaceutical and Fortune 500 retailer.
               </p>
-            </div>
-            <div class="col-4 col-md-3">
-              <img class="rounded-circle" id="profile-photo" src="img/root/profile.jpg" />
-            </div>
-          </div>
-
-        </section>
-        <!-- about -->
-        <section id="about">
-          <hr />
-          <h2>about</h2>
-          <div id="entry-wrapper">
-            <!-- penn -->
-            <div class="entry d-flex align-items-center" id="penn">
-              <div class="entry-photo">
-                <img src="img/about/mt.png" />
-              </div>
-              <div class="entry-content">
-                <h5>University of Pennsylvania</h5>
-                <h6 class="text-muted">Jerome Fisher Program in Management &amp; Technology</h6>
-                <p class="mb-0">
-                  B.S. Computer Science
-                </p>
-                <p>
-                  B.S. Economics (Statistics, Management)
-                </p>
+              <div class="d-flex justify-content-center">
+                <a href="http://musepennconsulting.org/" target="_blank"><button class="btn intro-btn">musepenn</button></a>
               </div>
             </div>
-            <hr width="25%" />
-            <!-- optiver -->
-            <div class="entry d-flex align-items-center" id="optiver">
-              <div class="entry-photo">
-                <img src="img/about/optiver.png" />
+            <div class="col-12 col-sm-6 col-md-4 intro-col">
+              <div class="img-wrapper d-flex align-items-center justify-content-center">
+                <img class="img-fluid" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/999604_549372568451883_115978618_n.png?oh=9430558a41034659af7dc93ec914bf46&oe=5B4615E8" />
               </div>
-              <div class="entry-content">
-                <h5><code>Optiver</code></h5>
-                <p>
-                  This year, I'll be working as a trading intern in Chicago.
-                </p>
-              </div>
-            </div>
-            <!-- capital one -->
-            <div class="entry d-flex align-items-center" id="capitalone">
-              <div class="entry-photo">
-                <img src="img/about/capitalone-circle.png" />
-              </div>
-              <div class="entry-content">
-                <h5><code>Capital One</code></h5>
-                <p>
-                  Worked on credit line analytics as a business analyst intern.
-                </p>
-              </div>
-            </div>
-            <hr width="25%" />
-            <!-- muse -->
-            <div class="entry d-flex align-items-center" id="muse">
-              <div class="entry-photo">
-                <img src="img/about/muse.png" />
-              </div>
-              <div class="entry-content">
-                <h5><code>MUSE Consulting</code></h5>
-                <p>
-                  Consulted for clients including a Fortune 500 retailer and Fortune 100 pharmaceutical company.
-                </p>
-              </div>
-            </div>
-            <!-- witg -->
-            <div class="entry d-flex align-items-center" id="wdhc">
-              <div class="entry-photo">
-                <img src="img/about/wdhc-w.png" />
-              </div>
-              <div class="entry-content">
-                <h5><code>Wharton Digital Health</code></h5>
-                <p>
-                  Analytics-centric consulting for healthcare clients.
-                </p>
-              </div>
-            </div>
-            <!-- wdhc -->
-            <div class="entry d-flex align-items-center" id="witg">
-              <div class="entry-photo">
-                <img src="img/about/witg.jpg" />
-              </div>
-              <div class="entry-content">
-                <h5><code>Wharton Investment &amp; Trading Group</code></h5>
-                <p>
-                  Quantitative Investment Strategies team.
-                </p>
+              <h4 class="text-center">APAHW 2018</h4>
+              <hr width="40%" />
+              <p class="mb-4">
+                Executive/Financial Tri-Chair for APAHW 2018, a week-long celebration of Asian Pacific American cultures and heritages that includes events ranging from individual and group performances to guest speakers and discussions.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="http://www.apahw.com/" target="_blank"><button class="btn intro-btn">apahw 2018</button></a>
               </div>
             </div>
           </div>
-          <p class="mt-3 mb-0 text-center">
-            <code class="ns"><a class="btn btn-primary" href="files/resume.pdf" target="_blank">view my resume</a></code>
-          </p>
-        </section>
-        <!-- portfolio -->
-        <section id="portfolio">
-          <hr />
-          <h2>projects &amp; portfolio</h2>
-          <p class="subhead">
-            photography &nbsp; • &nbsp; web &nbsp; • &nbsp; code &nbsp; • &nbsp; graphic design
-          </p>
-          <div class="card">
-            <!-- nav -->
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#photography"><code>photography</code></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#web"><code>web</code></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#design"><code>design</code></a>
-                </li>
-              </ul>
-            </div>
-            <!-- tabs -->
-            <div class="tab-content">
-              <!-- photography -->
-              <div class="tab-pane fade show active" id="photography">
-                <div class="card-body">
-                  <!-- general -->
-                  <h4 class="card-title">Photography</h4>
-                  <h6 class="card-subtitle text-muted">Nikon D3200 • iPhone 6S • iPhone 8</h6>
-                  <div class="row">
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/montreal-cathedral.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/capitol-hill.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/washington-monument-fireworks.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/disney-epcot-fireworks.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/disney-castle.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/schuylkill.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/adirondacks.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/bubble.jpg" />
-                    </div>
-                  </div>
-                  <hr class="my-4"/>
-                  <!-- food -->
-                  <h4 class="card-title">Food photography</h4>
-                  <h6 class="card-subtitle text-muted">Nikon D3200</h6>
-                  <div class="row">
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/chelsea-market-tacos.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/chelsea-market-japanese.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/ippudo.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/ribs.jpg" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/burgers.png" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 photo">
-                      <img src="img/portfolio/photo/truffles.jpg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- web design -->
-              <div class="tab-pane fade" id="web">
-                <div class="card-body row">
-                  <!-- muse consulting website -->
-                  <div class="col-12 col-lg-6" id="musesite">
-                    <div class="d-flex align-items-center">
-                      <img class="card-img-top img-fluid" src="img/portfolio/web/musepenn.png" alt="MUSE Consulting @ The Wharton School">
-                    </div>
-                    <h4 class="card-title">MUSE Consulting Website</h4>
-                    <h6 class="card-subtitle text-muted">Squarespace</h6>
-                    <p>
-                      Redesigned the website for the MUSE Consulting club at Wharton and built in Squarespace.
-                      Included new layout and sections for structure, client testimonials, and member experiences.
-                      Done in collaboration with
-                      <code class="ns"><a class="btn btn-primary" href="http://www.cameroncabo.com/"><i class="fas fa-user"></i> Cameron Cabo</a></code>
-                      and
-                      <code class="ns"><a class="btn btn-primary disabled" href="#"><i class="fas fa-user"></i> Zack Varrato</a></code>.
-                    </p>
-                    <code class="ns"><a href="http://musepenn.org/consulting/" class="btn btn-primary">
-                      <i class="fab fa-chrome"></i>
-                      MUSE
-                    </a></code>
-                    <code class="ns"><a href="http://www.squarespace.com" class="btn btn-secondary">
-                      <i class="fas fa-wrench"></i>
-                      Squarespace
-                    </a></code>
-                    <hr class="project-divider"/>
-                  </div>
-                  <!-- personal website -->
-                  <div class="col-12 col-lg-6" id="website">
-                    <div class="d-flex align-items-center">
-                      <img class="card-img-top img-fluid" src="img/portfolio/web/website.png" alt="andrewcui.com">
-                    </div>
-                    <h4 class="card-title">andrewcui.com</h4>
-                    <h6 class="card-subtitle text-muted">HTML, CSS, Bootstrap</h6>
-                    <p>
-                      Built as a side project to self-learn basic HTML and CSS.
-                      Initially completed in May 2017, redesigned in August, October, December 2017.
-                      Hosted on GitHub pages and Google Domains, with Google Analytics enabled.
-                    </p>
-                    <code class="ns"><a href="#" class="btn btn-primary">
-                      <i class="fab fa-chrome"></i>
-                      this site
-                    </a></code>
-                    <code class="ns"><a href="https://github.com/andrew-cui/andrew-cui.github.io" class="btn btn-secondary">
-                      <i class="fab fa-github"></i>
-                      GitHub
-                    </a></code>
-                  </div>
-                </div>
-              </div>
-              <!-- graphic design -->
-              <div class="tab-pane fade" id="design">
-                <div class="card-body row" id="wufc">
-                  <!-- wharton finance club -->
-                  <div class="col-12 col-lg-6">
-                    <div class="d-flex flex-wrap align-items-center">
-                      <img class="card-img-top img-fluid" id="wufc-ocr" src="img/portfolio/design/wufc-ocr.png" alt="Wharton Finance Club: 10 Steps to OCR">
-                      <img class="card-img-top img-fluid" id="wufc-banner" src="img/portfolio/design/wufc-banner.png" alt="Wharton Finance Club: New club banner">
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center">
-                      <img class="card-img-top img-fluid" id="wufc-logo" src="img/portfolio/design/wufc-logo.png" alt="Wharton Finance Club: Updated logo">
-                    </div>
-                    <h4 class="card-title">Wharton Finance Club Marketing</h4>
-                    <h6 class="card-subtitle text-muted">Adobe Creative Suite</h6>
-                    <p>
-                      Designed cover photos for events such as workshops, competitions, and social events; created mockups for redesigns of previous photos.
-                    </p>
-                    <hr class="wufc-hr"/>
-                    <p>
-                      Recolored and improved resolution of the existing Wharton Finance Club "red bull" logo using Adobe Illustrator and Photoshop.
-                    </p>
-                    <hr class="wufc-hr"/>
-                    <p>
-                      Designed the 6' x 3' banner that is currently used at club recruitment fairs and club events using InDesign and Photoshop.
-                    </p>
-                    <code class="ns"><a href="https://www.whartonfinanceclub.com" class="btn btn-primary">
-                      <i class="fab fa-chrome"></i>
-                      Wharton Ugr. Finance Club
-                    </a></code>
-                    <code class="ns"><a href="https://github.com/andrew-cui/andrew-cui.github.io/img/portfolio/design" class="btn btn-secondary">
-                      <i class="fab fa-chrome"></i>
-                      full resolution files
-                    </a></code>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+        </div>
+      </section>
+      <section class="section-img" id="work">
+        <div class="container overlay d-flex flex-column">
+          <div class="overlay-content text-left">
+            <h1>Work</h1>
+            <h5>Engineering and business student at Penn</h5>
           </div>
-        </section>
-        <!-- contact -->
-        <section id="contact">
-          <hr />
-          <h2>contact</h2>
-          <p class="my-4">
-            Get in touch! Shoot me an email or connect with me online &#8212;
-            I'm usually pretty good about responding within a couple days and happy to talk (and help if I can)!
-          </p>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-left">Andrew Cui</h4>
-              <h6 class="text-muted">University of Pennsylvania</h6>
-              <p class="card-text text-muted">Management &amp; Technoloy • Class of 2020</p>
-              <code class="ns"><a class="btn btn-primary" href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank">
-                email
-                <i class="fas fa-play icon-send"></i>
-              </a></code>
-            </div>
+          <div class="overlay-nav d-flex flex-row flex-wrap" role="tablist">
+            <ul class="nav nav-pills mb-3" id="tabs-work" role="tablist">
+              <li class="nav-item">
+                <a class="btn-pill" id="pill-intern" data-toggle="pill" href="#tab-intern" role="tab">
+                  <button class="btn m-2">intern</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-pill" id="pill-penn" data-toggle="pill" href="#tab-penn" role="tab">
+                  <button class="btn m-2">penn</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-pill" id="pill-activities" data-toggle="pill" href="#tab-activities" role="tab">
+                  <button class="btn m-2">activities</button>
+                </a>
+              </li>
+              <a href="files/andrewcui-resume.pdf" target="_blank"><button class="btn m-2">resume</button></a>
+            </ul>
           </div>
-          <button type="button" class="btn btn-secondary credit" data-toggle="modal" data-target="#credit">
-            special thanks to
-          </button>
-
-          <div class="modal fade" id="credit" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">special thanks to</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+        </div>
+      </section>
+      <section class="tab-content" id="work-content">
+        <div class="tab-pane fade" id="tab-intern" role="tabpanel">
+          <button class="btn tab-close"><i class="far fa-times-circle"></i></button>
+          <div class="container">
+            <h2>Internships</h2>
+            <div class="row mt-4">
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/optiver.png" />
+                    <h4 class="ml-3">Optiver</h4>
+                  </div>
+                  <h5>Trading, Summer 2018</h5>
                 </div>
-                <div class="modal-body">
-                  <h6>Blackrock Digital</h6>
-                  <p class="card-text text-muted d-inline mr-2">Side navigation bar template</p>
-                  <code class="ns"><a class="btn btn-secondary" href="https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/css/simple-sidebar.css#L14" target="_blank">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                  </a></code>
-                </div>
-                <div class="modal-footer d-flex justify-content-between">
-                  <span>Made with <i class="fas fa-heartbeat"></i> in
-                    <i class="fas fa-map-marker-alt"></i> Philadelphia, NYC &amp; Rochester</span>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/capitalone.png" />
+                    <!-- <h4 class="ml-3">Capital One</h4> -->
+                  </div>
+                  <h5>Product Management and Analytics, Summer 2017</h5>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- footer -->
-        <footer class="px-2">
-          <p class="px-2 text-right">
-            <span>&copy; Andrew Cui &nbsp; • &nbsp; 2018</span>
-          </p>
-        </footer>
-      </main>
-    </div>
+        </div>
+        <div class="tab-pane fade" id="tab-penn" role="tabpanel">
+          <button class="btn tab-close"><i class="far fa-times-circle"></i></button>
+          <div class="container">
+            <h2>Penn</h2>
+            <div class="row mt-4">
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/.png" />
+                    <h4 class="ml-3">Wharton Management Department</h4>
+                  </div>
+                  <h5>Research Assistant, Spring 2018</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/.png" />
+                    <h4 class="ml-3">Wharton Statistics Department</h4>
+                  </div>
+                  <h5>Grader, Fall 2017</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-activities" role="tabpanel">
+          <button class="btn tab-close"><i class="far fa-times-circle"></i></button>
+          <div class="container">
+            <h2>Activities</h2>
+            <p>This semester, I reduced my commitments at Penn to just MUSE and APAHW so I could devote more time to them. Notable organizations on campus:
+            </p>
+            <div class="row mt-4">
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/.png" />
+                    <h4 class="ml-3">APAHW 2018: Asian Pacific American Heritage Week</h4>
+                  </div>
+                  <h5>Executive Tri-Chair</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/muse.png" />
+                    <h4 class="ml-3">MUSE Marketing Consulting</h4>
+                  </div>
+                  <h5>Project Leader</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry inactive">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/wdhc.png" />
+                    <h4 class="ml-3">Wharton Digital Health (MBA club)</h4>
+                  </div>
+                  <h5>Analytics Consultant, Fall 2017</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry inactive">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/witg.png" />
+                    <h4 class="ml-3">Wharton Investment and Trading</h4>
+                  </div>
+                  <h5>Quantitative Investment Strategies, Fall 2017</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry inactive">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/.png" />
+                    <h4 class="ml-3">Student Federal Credit Union</h4>
+                  </div>
+                  <h5>Credit Union Operations, Fall 2016 - Fall 2017</h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="work-entry inactive">
+                  <div class="d-flex align-items-center">
+                    <img src="img/logo/.png" />
+                    <h4 class="ml-3">Penn Appetit</h4>
+                  </div>
+                  <h5>Photography and Design, Fall 2016</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-img" id="creative">
+        <div class="container overlay pt-5 d-flex flex-column">
+          <div class="overlay-content text-right">
+            <h1 class="mt-5 mb-3">Creative</h1>
+            <h5>Projects: pictures, designs, food, and writing</h5>
+          </div>
+          <div class="overlay-nav ml-auto md-flex flex-row flex-wrap" role="tablist">
+            <ul class="nav nav-pills mb-3" id="tabs-creative" role="tablist">
+              <li class="nav-item">
+                <a class="btn-pill" id="pill-photo" data-toggle="pill" href="#tab-photo" role="tab">
+                  <button class="btn m-2">photo</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-pill" id="pill-design" data-toggle="pill" href="#tab-design" role="tab">
+                  <button class="btn m-2">design</button>
+                </a>
+              </li>
+              <a href="http://www.instagram.com/cui._.sine/" target="_blank"><button class="btn m-2"><i class="fab fa-instagram icon mr-2"></i>Food</button></a>
+              <a href="https://medium.com/@andrew.yiqun.cui" target="_blank"><button class="btn m-2"><i class="fab fa-medium icon mr-2"></i>Medium</button></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content" id="creative-content">
+        <div class="tab-pane fade" id="tab-photo" role="tabpanel">
+          <button class="btn tab-close"><i class="far fa-times-circle"></i></button>
+          <div class="container">
+            <h2>Photography</h2>
+            <p class="mb-4">
+              Taken with a Nikon D3200 and iPhone 8/6S. I'll be adding to a food blog (currently relinked to my public Instagram) in the coming months!
+            </p>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/washington-monument-fireworks.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/disney-epcot-fireworks.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/hubbub-coffee.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/sugar-philly.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/truffles.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/ribs.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/chelsea-market-tacos.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/montreal-cathedral.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/capitol-hill.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/upenn-lrsm.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/disney-castle.jpg" /></div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1"><img class="photo" src="img/photo/bubble.jpg" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-design" role="tabpanel">
+          <button class="btn tab-close"><i class="far fa-times-circle"></i></button>
+          <div class="container">
+            <h2>Design</h2>
+            <p class="mb-4">
+              Individual mockups and graphic design for clubs/companies. I'm currently working on freelance web design projects for two local companies as well.
+            </p>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="img/design/schedule.png">
+                  <div class="card-body">
+                    <h4 class="card-title">New tab scheduler</h4>
+                    <p class="card-text">A simplistic, modern approach to using a browser new tab purely as a to-do list. Designed to integrate calendar and reminder events to provide users with a comprehensive centralized agenda that is easy to access and interact with.
+                    <p class="d-flex align-items-center justify-content-between">
+                      <small class="text-muted text-left">Sketch</small>
+                      <small class="text-muted text-right">February 2018</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="img/design/wufc-ocr.png">
+                  <div class="card-body">
+                    <h4 class="card-title">Wharton Finance Club</h4>
+                    <p class="card-text">Created mockups for redesigning the Wharton Finance Club's "10 Steps to OCR" event promotional series as a member of the Marketing Committee's design team.
+                    <p class="d-flex align-items-center justify-content-between">
+                      <small class="text-muted text-left">Adobe Photoshop/InDesign</small>
+                      <small class="text-muted text-right">September 2017</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="img/design/musepenn.png">
+                  <div class="card-body">
+                    <h4 class="card-title mb-0">MUSE Consulting website</h4>
+                    <div class="d-flex justify-content-center mt-1 mb-3">
+                      <a href="http://musepennconsulting.org/" target="_blank"><button class="btn intro-btn px-2 py-0"><i class="fab fa-chrome mr-2"></i>view</button></a>
+                    </div>
+                    <p class="card-text">Redesigned the MUSE Consulting organization website using Squarespace to improve professional image for clients and new members. Done in collaboration with <a href="http://www.cameroncabo.com/" target="_blank">Cameron Cabo</a> and <a href="http://www.zackvarrato.com/" target="_blank">Zach Varrato</a>.
+                    <p class="d-flex align-items-center justify-content-between">
+                      <small class="text-muted text-left">Squarespace</small>
+                      <small class="text-muted text-right">December 2017</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-img" id="contact">
+        <div class="container overlay d-flex flex-column justify-content-center">
+          <div class="overlay-content text-left">
+            <h1>Contact</h1>
+            <h5>Get in touch!</h5>
+            <div class="mt-3 pl-3">
+              <p class="mb-1">
+                <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fas fa-envelope"></i></a>
+                Personal: andrew.yiqun.cui@gmail.com
+              </p>
+              <p class="mb-1">
+                <a href="mailto:yiqunc@wharton.upenn.edu?Subject=[andrewcui.com] " target="_blank"><i class="fas fa-envelope"></i></a>
+                Campus: yiqunc@wharton.upenn.edu
+              </p>
+              <div class="row">
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                  <p class="mb-1">
+                    <a href="http://www.linkedin.com/in/andrew-cui/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+                    LinkedIn
+                  </p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                  <p class="mb-1">
+                    <a href="http://github.com/andrew-cui" target="_blank"><i class="fab fa-github icon"></i></a>GitHub
+                  </p>
+                </div>
+              </div>
+              <p class="mb-0"><a><i class="fas fa-map-marker mr-1"></i></a>Philadelphia, PA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-dots">
+        <div class="d-flex flex-row flex-wrap">
+          <div class="px-3 pt-2"><p><a href="#">Home</a></p></div>
+          <div class="px-3 pt-2"><p><a href="#intro">About</a></p></div>
+          <div class="px-3 pt-2"><p><a href="#work">Experience</a></p></div>
+          <div class="px-3 pt-2"><p><a href="#creative">Portfolio</a></p></div>
+          <div class="px-3 pt-1 footer-icon"><p>
+            <a href="http://www.quora.com/profile/Andrew-Cui-2" target="_blank"><i class="fab fa-quora icon"></i></a>
+          </p></div>
+          <div class="px-3 pt-1 footer-icon"><p>
+            <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fas fa-envelope"></i></a>
+          </p></div>
+          <div class="ml-auto px-3 pt-2">
+            <p class="text-right" id="copyright">&copy; Andrew Cui, 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
-  <!-- javascript initialization -->
-    <!-- bootstrap, jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!-- bootstrap, jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- google analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+  <!-- website script -->
+  <script>
+    // activates tooltils
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
-      ga("create", "UA-86802917-1", "auto");
-      ga("require", "GTM-T2HV9W9");
-      ga("send", "pageview");
-    </script>
+    // remove tab activity on click, currently closes all
+    $(".tab-close" ).click(function() {
+      $(".tab-pane").removeClass("active");
+      $(".btn-pill").removeClass("active");
+      $(".tab-pane").removeClass("show");
+      $(".btn-pill").removeClass("show");
+    })
+  </script>
 
-    <script>
-    // open sidebar on default for large windows
-    $(document).ready(function(e) {
-      if ($(window).width() >= 992) {
-        $(".toggle-icon").toggleClass("active-toggle");
-        $("#wrapper").toggleClass("toggled");
-      }
-    });
-    // open sidebar when clicked, forcing off page if small
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        $(".toggle-icon").toggleClass("active-toggle");
-    });
-    // toggler script
-    $("[data-toggle='toggle']").click(function() {
-      var item = $(this).data("target");
-      $(item).toggleClass("open");
-    });
-    </script>
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+
+    ga("create", "UA-86802917-1", "auto");
+    ga("require", "GTM-T2HV9W9");
+    ga("send", "pageview");
+  </script>
+
+<!--
+[special thanks to the creators of]
+Bootstrap 4.0
+Google Analytics
+Google Fonts
+FontAwesome 5 -->
 </html>
