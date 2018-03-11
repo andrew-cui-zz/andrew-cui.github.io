@@ -217,6 +217,9 @@ section {
   background-color: #D15945;
   color: white;
 }
+#apahw .img-wrapper {
+  padding-bottom: 0;
+}
 @media screen and (max-width: 576px) {
   .intro-col {
     margin-bottom: 2rem;
@@ -226,11 +229,20 @@ section {
     height: 100px;
   }
   .img-wrapper img {
+    max-width: 45%;
+  }
+  #apahw .img-wrapper img {
     max-width: 50%;
+  }
+  #apahw .img-wrapper {
+    padding-bottom: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .img-wrapper img {
+    max-width: 55%;
+  }
+  #apahw .img-wrapper img {
     max-width: 60%;
   }
 }
