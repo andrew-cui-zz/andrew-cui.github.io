@@ -60,17 +60,20 @@ nav {
   font-weight: 300;
   background-color: rgba(255,255,255,.95);
 }
+.navbar {
+  padding: .5rem 3.5rem;
+}
 .navbar-brand {
   font-family: 'Yantramanav', sans-serif;
   font-weight: 400;
 }
 .nav-icon a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: auto .75rem;
   color: rgba(0,0,0,.6);
 }
 a.nav-link {
-  font-size: .9375rem;
+  font-size: .9rem;
   margin: 0 .125rem;
 }
 nav a:hover,
@@ -105,7 +108,7 @@ section {
   min-height: 30rem;
 }
 .section-text {
-  padding-top: calc(4rem + 48px);
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .overlay {
@@ -163,9 +166,17 @@ section {
   section {
     padding: 0 1rem;
   }
+  .navbar {
+    padding: .5rem 1rem;
+  }
   .section-text {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar {
+    padding: .5rem 2rem;
   }
 }
 /** section: head/intro **/
