@@ -14,7 +14,7 @@ andrewcui.com
   <meta name="author" content="Andrew Cui">
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#EC407A" />
+  <meta name="theme-color" content="#12232F" />
   <link rel="canonical" href="https://www.andrewcui.com">
 
   <!-- bootstrap 4.0 -->
@@ -25,53 +25,168 @@ andrewcui.com
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
   <!-- CSS (ministyle: no-space CSS)-->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar-toggle.css" />
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+
+
 </head>
 
-<!-- website content -->
-
 <body>
-  <main>
-    <section id="head">
-      <div class="container-fluid">
-        <img class="img-fluid rounded-circle mx-auto" src="img/site/profile.jpg" id="profile-img" />
-        <h1>Andrew Cui</h1>
-        <h5 class="text-center uppercase mb-3"><b>University of Pennsylvania</b></h5>
-        <p class="text-center m-auto" id="profile-summary">
-          Engineering, statistics, and business student interested in data science, business strategy, and technology products. Side passions for sports analytics, cooking, and photography.
-        </p>
-        <div class="dots mt-4 my-2 py-2 px-5"></div>
-        <h5 class="text-center uppercase mt-3 mb-3"><b>Background</b></h5>
-        <div class="row d-flex align-items-center justify-content-center" id="intro">
-          <div class="col-2 px-4">
-            <img src="img/logo/lse.png" class="img-fluid"/>
-          </div>
-          <div class="col-2 px-4">
-            <img src="img/logo/penn.jpg" class="img-fluid"/>
-          </div>
-          <div class="col-2 px-4">
-            <img src="img/logo/capitalone.jpg" class="img-fluid"/>
-          </div>
-          <div class="col-2 px-4">
-            <img src="img/logo/optiver.png" class="img-fluid"/>
-          </div>
-        </div>
-        <div class="dots mt-4 my-2 py-2 px-5"></div>
-        <h5 class="text-center uppercase mt-3 mb-3"><b>Contact</b></h5>
-        <div class="mt-4 mx-auto d-flex justify-content-center" id="profile-links">
-          <a href="https://www.linkedin.com/in/andrew-cui" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-          <a href="https://github.com/andrew-cui" target="_blank"><i class="fab fa-github icon"></i></a>
-          <a href="https://twitter.com/AndrewYCui" target="_blank"><i class="fab fa-twitter icon"></i></a>
-          <a href="mailto:email@andrewcui.com?Subject=[andrewcui.com] " target="_blank"><i class="fas fa-envelope icon"></i></a>
-        </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="ml-auto px-3 mt-4">
-      <p class="text-center" id="copyright">&copy; Andrew Cui, 2018</p>
-    </div>
-  </footer>
+  <div class="wrapper">
+    <!-- Sidebar - currently not shown -->
+    <nav id="sidebar" class="d-none">
+        <div class="sidebar-header">
+            <!-- <h3>Bootstrap Sidebar</h3> -->
+
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid mr-1" width="16px" src="img/site/logo.png" />
+              ANDREW CUI</a>
+            <p>Penn '20 | Photography</p>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li> -->
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="https://tinyurl.com/andrewcui-resume" target="_blank">Resume</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="portfolio.html#landscape">Landscape</a>
+                    </li>
+                    <li>
+                        <a href="#">Portraits</a>
+                    </li>
+                    <li>
+                        <a href="#">Groups/Events</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+              <a href="http://www.instagram.com/andrewcui22" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <!-- <li class="mx-3"> -->
+              <div class="mt-4 px-5 mx-auto d-flex justify-content-center" id="profile-links">
+                <a href="https://www.linkedin.com/in/andrew-cui" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+                <a href="https://www.github.com/andrew-cui" target="_blank"><i class="fab fa-github icon"></i></a>
+                <a href="https://www.instagram.com/andrewcui22" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                <a href="mailto:email@andrewcui.com?Subject=" target="_blank"><i class="fas fa-envelope icon"></i></a>
+              </div>
+            <!-- </li> -->
+        </ul>
+    </nav>
+    <!-- <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </nav> -->
+    <!-- Page content -->
+    <main class="mt-5 d-flex align-items-center justify-content-center">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
+          <!-- <div class="container-fluid"> -->
+<!-- 
+              <button type="button" id="sidebarCollapse" class="btn">
+                  <i class="fas fa-hashtag"></i>
+                  <span>Contents</span>
+              </button> -->
+              <!-- Secondary navigation within pages -->
+              <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                  </ul>
+              </div> -->
+          <!-- </div> -->
+      <!-- </nav> -->
+
+      <section id="head" class="mt-5 d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+          <img class="img-fluid rounded-circle mx-auto m-2" src="img/site/profile.jpg" id="profile-img" />
+          <h1>Andrew Cui</h1>
+          <h5 class="text-center uppercase mb-3"><b>NYC&nbsp;&nbsp;|&nbsp;&nbsp;PHL</b></h5>
+          <p class="text-center m-auto" id="profile-summary">
+            Senior at Penn in the M&T program, studying computer science, statistics and marketing. Interests in photography, baseball and traveling (16 countries in spring '19 abroad). Originally from Rochester NY, living in MD/PA currently, and Will be working in NYC next year!
+          </p>
+          <!-- <div class="dots mt-4 my-2 py-2 px-5"></div> -->
+          <!-- <h5 class="text-center uppercase mt-3 mb-3"><b>Background</b></h5> -->
+          <!-- <div class="row d-flex align-items-center justify-content-center" id="intro">
+            <div class="col-1 col-sm-2 col-lg-1"></div>
+            <div class="col-5 col-sm-4 col-lg-2 px-4">
+              <img src="img/logo/penn.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-5 col-sm-4 col-lg-2 px-4">
+              <img src="img/logo/lse.png" class="img-fluid"/>
+            </div>
+            <div class="col-1 col-sm-2 col-lg-1 col-spacer"></div>
+            <div class="col-1 col-sm-2 col-lg-1 col-spacer"></div>
+            <div class="col-5 col-sm-4 col-lg-2 px-4">
+              <img src="img/logo/capitalone.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-5 col-sm-4 col-lg-2 px-4">
+              <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" class="img-fluid"></>
+            </div>
+            <div class="col-1 col-sm-2 col-lg-1"></div>
+          </div> -->
+          <div class="dots mt-4 my-2 py-2 px-5"></div>
+          <footer>
+              <div class="text-center">
+                <h2 class="mx-5 px-5">
+                  <a href="https://www.linkedin.com/in/andrew-cui" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.github.com/andrew-cui" target="_blank"><i class="fab fa-github icon"></i></a>
+                  &nbsp;&nbsp;
+                  <a href="https://www.instagram.com/andrewcui22" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                  &nbsp;&nbsp;
+                  <a href="mailto:andrew@wharton.upenn.edu" target="_blank"><i class="fas fa-envelope icon"></i></a>
+                </h2>
+              </div>
+              <div class="ml-auto px-3 mt-4">
+                
+                <p class="text-center" id="copyright">&copy; Andrew Cui, 2019</p>
+              </div>
+            </footer>
+      </section>
+
+    </main>
+  </div>
 
   <!-- bootstrap, jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -95,6 +210,13 @@ andrewcui.com
       $('.navbar-collapse').toggleClass('scrolled', scrolled);
       $('.navbar-nav').toggleClass('scrolled', scrolled);
     });
+  </script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+      });
   </script>
   <!-- border-bottom: ; -->
 </body>

@@ -1,0 +1,218 @@
+/**
+AndrewCui.com
+2018
+stylesheet.css
+[Creative Commons attributions inline]
+**/
+
+/** page style setup **/
+html {
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   width: 100%;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   background-color: white;
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+section {
+  margin-top: 3.5%;
+  padding-top: 2.5%;
+  min-height: 7.5rem;
+}
+code {
+  color: #12232F;
+}
+.container-fluid {
+  padding: 0 1.5rem !important;
+}
+h1 {
+  font-family: 'Work Sans';
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 200;
+  color: #12232F;
+}
+h2 {
+  font-family: 'Libre Franklin';
+  font-weight: 400;
+  font-size: 2rem;
+  color: #12232F;
+  text-align: center;
+}
+h3 {
+  font-family: 'Work Sans';
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+h4 {
+  font-family: 'Libre Franklin';
+  font-size: 1.2rem;
+  margin-bottom: .125rem;
+}
+h5 {
+  font-family: 'Yantramanav';
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: .25rem;
+  /* font-style: italic; */
+}
+p {
+  font-family: 'Work Sans';
+  font-weight: 300;
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  h1 {    font-size: 3rem;      }
+  h2 {    font-size: 1.75rem;     }
+  h4 {    margin-bottom: .25rem;  }
+  h5 {    font-size: 1.05rem;     }
+  p {     font-size: 1rem;        }
+  /* .container-fluid {
+    padding: 0 2rem;
+  } */
+}
+/** backgrounds **/
+#background1 {
+  background-color: #12232F;
+  background-image: -webkit-linear-gradient(87.5deg, #12232F 50%, white 50%);
+  min-height: 20vh;
+}
+.dots {
+  /* position: fixed; */
+  background-image: linear-gradient(to right, #12232F 10%, transparent 0%);
+  padding: 12px 10%;
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  padding-bottom: 2.5%;
+  background-position: top;
+  background-size: 24px 2px;
+  background-repeat: repeat-x;
+  max-width: 8%;
+}
+/** navigation bar **/
+nav {
+  font-family: 'Yantramanav' !important;
+  font-weight: 300;
+  font-size: 16px;
+}
+.navbar-collapse li.nav-item a.nav-link:hover {
+  color: #DC143C;
+}
+/* .navbar-brand {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  padding: .25rem 0;
+  padding-top: .35rem;
+}
+.navbar-brand img {
+  padding-top: .1rem;
+  padding-bottom: .25rem;
+} */
+.nav-link {
+  padding: .25rem 1rem;
+}
+/** opening section **/
+section#head {
+  margin-top: 0;
+  padding-top: 0;
+}
+#profile-img {
+  filter: grayscale(20%);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 1.25rem;
+  width: 40%;
+  max-width: 160px;
+  border: 1.5px solid rgba(200,200,200,.75);
+}
+#head h1 {
+  margin-top: 44px;
+  padding-bottom: .5rem;
+}
+#profile-summary {
+  width: 100%;
+  line-height: 1.675;
+}
+
+@media screen and (min-width: 576px) {
+  #profile-summary {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #profile-summary {
+    width: 60%;
+  }
+  .col-spacer {
+    max-width: 0%;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .col-spacer {
+    max-width: 16.666667%;
+  }
+}
+a,
+.icon {
+  color: rgba(120,120,120,.75);
+}
+a:hover,
+.icon:hover {
+  color: #12232F;
+  transition: .25s;
+}
+#profile-links .icon {
+  font-size: 24px;
+  margin: 0 16px;
+}
+#intro img {
+  filter: grayscale(100%);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/** footer **/
+footer {
+  /* position: fixed; */
+  padding-top: 100%;
+  bottom: 0;
+  width: 100%;
+  padding: 0 7.5%;
+  /* background-color: #12232F; */
+}
+.footer-dots {
+  padding-top: 1rem;
+  background-image: linear-gradient(to right, white 10%, transparent 0%);
+  padding: 12px 0;
+  background-position: top;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
+footer p {
+  padding-bottom: .5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: .75rem;
+  text-decoration: none;
+}
+.footer-icon p {
+  font-size: 20px;
+}
+p#copyright,
+footer a {
+  color: rgba(5,5,5,.75);
+}
